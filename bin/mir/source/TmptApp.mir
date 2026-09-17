@@ -1,0 +1,864 @@
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Activity,1,13,21]; ]
+using Toybox.Activity;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [ActivityRecording,2,13,30]; ]
+using Toybox.ActivityRecording;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Attention,3,13,22]; ]
+using Toybox.Attention;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Application,4,13,24]; ]
+using Toybox.Application;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Position,5,13,21]; ]
+using Toybox.Position;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Sensor,6,13,19]; ]
+using Toybox.Sensor;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 7; @symbol_usingdef<0> = [Toybox,7,6,12]; @symbol_usingdef<1> = [Timer,7,13,18]; ]
+using Toybox.Timer;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 8; @symbol_usingdef<0> = [Toybox,8,6,12]; @symbol_usingdef<1> = [WatchUi,8,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 10; @symbol_classdef = [TmptApp,10,6,13]; @symbol_extends<0> = [Application,10,22,33]; @symbol_extends<1> = [AppBase,10,34,41]; ]
+class TmptApp extends Application.AppBase {
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 10; ]
+    <init> {
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 10; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 11; @position = 8; @symbol_vardef = [model,11,8,13]; ]
+    var model;
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 12; @position = 8; @symbol_vardef = [view,12,8,12]; ]
+    var view;
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 13; @position = 8; @symbol_vardef = [session,13,8,15]; ]
+    var session = null;
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 14; @position = 8; @symbol_vardef = [tickTimer,14,8,17]; ]
+    var tickTimer;
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 15; @position = 8; @symbol_vardef = [lastAlertLevel,15,8,22]; ]
+    var lastAlertLevel = 0;
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 17; @symbol_functiondef = [initialize,17,13,23]; ]
+    function initialize() as Void {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_17_26_21_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 18 8 ]
+        symbol [ AppBase %tmp.2 18 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 18 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 19 8 ]
+        symbol [ TmptModel %tmp.7 19 20 29 ];
+        %tmp.7 = getv ? :TmptModel;
+        %tmp.4 = newc %tmp.7 ();
+        symbol [ model ? 19 8 13 ];
+        putv self :model %tmp.4;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 20 8 ]
+        symbol [ Timer %tmp.10 20 24 29 ];
+        %tmp.10 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.11 20 30 35 ];
+        %tmp.11 = getv function ? %tmp.10 :Timer;
+        %tmp.8 = newc %tmp.11 ();
+        symbol [ tickTimer ? 20 8 17 ];
+        putv self :tickTimer %tmp.8;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_17_26_21_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 23; @symbol_functiondef = [onStart,23,13,20]; @symbol_param<0> = [state,23,21,26]; ]
+    function onStart(state) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_23_28_28_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 24 8 ]
+        symbol [ tickTimer %tmp.2 24 8 17 ];
+        %tmp.2 = getv ? :tickTimer;
+        symbol [ start %tmp.3 24 18 23 ];
+        %tmp.3 = getv function %tmp.2 :start;
+        %tmp.4 = self;
+        symbol [ method %tmp.5 24 24 30 ];
+        %tmp.5 = getv function %tmp.4 :method;
+        %tmp.7 = const :onTick;
+        symbol [ onTick %tmp.7 24 32 38 const ];
+        %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.7);
+        %tmp.9 = 1000;
+        %tmp.10 = true;
+        invoke %tmp.2 %tmp.3(%tmp.8, %tmp.9, %tmp.10);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 25 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_8_27_8_if_stmt:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_12_25_36_begin:
+        symbol [ model %tmp.12 25 12 17 ];
+        %tmp.12 = getv ? :model;
+        symbol [ started %tmp.13 25 18 25 ];
+        %tmp.13 = getv %tmp.12 :started;
+        bf %tmp.13 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_8_27_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_29_25_36_true:
+        symbol [ model %tmp.15 25 30 35 ];
+        %tmp.15 = getv ? :model;
+        symbol [ finished %tmp.16 25 36 44 ];
+        %tmp.16 = getv %tmp.15 :finished;
+        %tmp.17 = not %tmp.16;
+        push %tmp.17;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_29_25_36_end:
+        %tmp.18 = phi [%tmp.13 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_12_25_36_begin] [%tmp.17 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_29_25_36_true] [%tmp.18 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_29_25_36_end];
+        bf %tmp.18 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_8_27_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_8_27_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_46_27_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 26 12 ]
+        %tmp.19 = self;
+        symbol [ enableTracking %tmp.20 26 12 26 ];
+        %tmp.20 = getv function %tmp.19 :enableTracking;
+        invoke %tmp.19 %tmp.20();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_46_27_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_8_27_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_25_8_27_8_if_end:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_23_28_28_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 30; @symbol_functiondef = [onStop,30,13,19]; @symbol_param<0> = [state,30,20,25]; ]
+    function onStop(state) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_30_27_34_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 31 8 ]
+        symbol [ tickTimer %tmp.2 31 8 17 ];
+        %tmp.2 = getv ? :tickTimer;
+        symbol [ stop %tmp.3 31 18 22 ];
+        %tmp.3 = getv function %tmp.2 :stop;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 32 8 ]
+        symbol [ Sensor %tmp.4 32 8 14 ];
+        %tmp.4 = getm $.Toybox.Sensor;
+        symbol [ enableSensorEvents %tmp.5 32 15 33 ];
+        %tmp.5 = getv function %tmp.4 :enableSensorEvents;
+        %tmp.6 = null;
+        invoke %tmp.4 %tmp.5(%tmp.6);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 33 8 ]
+        symbol [ Position %tmp.7 33 8 16 ];
+        %tmp.7 = getm $.Toybox.Position;
+        symbol [ enableLocationEvents %tmp.8 33 17 37 ];
+        %tmp.8 = getv function %tmp.7 :enableLocationEvents;
+        symbol [ Position %tmp.9 33 38 46 ];
+        %tmp.9 = getm $.Toybox.Position;
+        symbol [ LOCATION_DISABLE %tmp.10 33 47 63 ];
+        %tmp.10 = getv %tmp.9 :LOCATION_DISABLE;
+        %tmp.11 = null;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.11);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_30_27_34_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 36; @symbol_functiondef = [getInitialView,36,13,27]; ]
+    function getInitialView() {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_36_30_39_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 37 8 ]
+        symbol [ TmptView %tmp.4 37 19 27 ];
+        %tmp.4 = getv ? :TmptView;
+        symbol [ model %tmp.6 37 28 33 ];
+        %tmp.6 = getv ? :model;
+        %tmp.1 = newc %tmp.4 (%tmp.6);
+        symbol [ view ? 37 8 12 ];
+        putv self :view %tmp.1;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 38 8 ]
+        %tmp.7 = newa 2;
+        symbol [ view %tmp.9 38 16 20 ];
+        %tmp.9 = getv ? :view;
+        %tmp.10 = dup %tmp.7;
+        %tmp.11 = aputv %tmp.10 0 %tmp.9;
+        symbol [ TmptDelegate %tmp.15 38 26 38 ];
+        %tmp.15 = getv ? :TmptDelegate;
+        %tmp.16 = self;
+        symbol [ self %tmp.16 38 39 43 ];
+        symbol [ model %tmp.18 38 45 50 ];
+        %tmp.18 = getv ? :model;
+        %tmp.12 = newc %tmp.15 (%tmp.16, %tmp.18);
+        %tmp.19 = dup %tmp.11;
+        %tmp.20 = aputv %tmp.19 1 %tmp.12;
+        ret %tmp.20;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_36_30_39_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 41; @symbol_functiondef = [startDay,41,13,21]; ]
+    function startDay() {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_41_24_47_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 42 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_8_42_56_if_stmt:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_12_42_36_begin:
+        symbol [ model %tmp.2 42 12 17 ];
+        %tmp.2 = getv ? :model;
+        symbol [ started %tmp.3 42 18 25 ];
+        %tmp.3 = getv %tmp.2 :started;
+        bf %tmp.3 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_8_42_56_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_29_42_36_true:
+        symbol [ model %tmp.5 42 30 35 ];
+        %tmp.5 = getv ? :model;
+        symbol [ finished %tmp.6 42 36 44 ];
+        %tmp.6 = getv %tmp.5 :finished;
+        %tmp.7 = not %tmp.6;
+        push %tmp.7;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_29_42_36_end:
+        %tmp.8 = phi [%tmp.3 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_12_42_36_begin] [%tmp.7 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_29_42_36_true] [%tmp.8 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_29_42_36_end];
+        bf %tmp.8 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_8_42_56_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_8_42_56_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_46_42_56_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 42 48 ]
+        ret ?;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_46_42_56_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_8_42_56_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_42_8_42_56_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 43 8 ]
+        symbol [ model %tmp.10 43 8 13 ];
+        %tmp.10 = getv ? :model;
+        symbol [ begin %tmp.11 43 14 19 ];
+        %tmp.11 = getv function %tmp.10 :begin;
+        invoke %tmp.10 %tmp.11();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 44 8 ]
+        %tmp.12 = 0;
+        symbol [ lastAlertLevel ? 44 8 22 ];
+        putv self :lastAlertLevel %tmp.12;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 45 8 ]
+        %tmp.13 = self;
+        symbol [ enableTracking %tmp.14 45 8 22 ];
+        %tmp.14 = getv function %tmp.13 :enableTracking;
+        invoke %tmp.13 %tmp.14();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 46 8 ]
+        symbol [ WatchUi %tmp.15 46 8 15 ];
+        %tmp.15 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.16 46 16 29 ];
+        %tmp.16 = getv function %tmp.15 :requestUpdate;
+        invoke %tmp.15 %tmp.16();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_41_24_47_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 49; @symbol_functiondef = [enableTracking,49,13,27]; ]
+    function enableTracking() {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_49_30_64_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 50 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_50_8_59_8_if_stmt:
+        symbol [ Toybox %tmp.2 50 12 18 ];
+        %tmp.2 = getv ? :Toybox;
+        %tmp.4 = const :ActivityRecording;
+        symbol [ ActivityRecording %tmp.4 50 24 41 const ];
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        bf %tmp.5 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_50_8_59_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_50_8_59_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_50_43_59_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 51 12 ]
+        symbol [ ActivityRecording %tmp.6 51 22 39 ];
+        %tmp.6 = getm $.Toybox.ActivityRecording;
+        symbol [ createSession %tmp.7 51 40 53 ];
+        %tmp.7 = getv function %tmp.6 :createSession;
+        %tmp.8 = newd 3;
+        %tmp.10 = const :name;
+        symbol [ name %tmp.10 52 17 21 const ];
+        %tmp.11 = "TMPT Training";
+        %tmp.12 = dup %tmp.8;
+        %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
+        %tmp.15 = const :sport;
+        symbol [ sport %tmp.15 53 17 22 const ];
+        symbol [ Activity %tmp.16 53 26 34 ];
+        %tmp.16 = getm $.Toybox.Activity;
+        symbol [ SPORT_TACTICAL %tmp.17 53 35 49 ];
+        %tmp.17 = getv %tmp.16 :SPORT_TACTICAL;
+        %tmp.18 = dup %tmp.13;
+        %tmp.19 = aputv %tmp.18 %tmp.15 %tmp.17;
+        %tmp.21 = const :subSport;
+        symbol [ subSport %tmp.21 54 17 25 const ];
+        symbol [ Activity %tmp.22 54 29 37 ];
+        %tmp.22 = getm $.Toybox.Activity;
+        symbol [ SUB_SPORT_GENERIC %tmp.23 54 38 55 ];
+        %tmp.23 = getv %tmp.22 :SUB_SPORT_GENERIC;
+        %tmp.24 = dup %tmp.19;
+        %tmp.25 = aputv %tmp.24 %tmp.21 %tmp.23;
+        %tmp.26 = invoke %tmp.6 %tmp.7(%tmp.25);
+        symbol [ session ? 51 12 19 ];
+        putv self :session %tmp.26;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 56 12 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_56_12_58_12_if_stmt:
+        symbol [ session %tmp.28 56 17 24 ];
+        %tmp.28 = getv ? :session;
+        symbol [ isRecording %tmp.29 56 25 36 ];
+        %tmp.29 = getv function %tmp.28 :isRecording;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        %tmp.31 = not %tmp.30;
+        bf %tmp.31 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_56_12_58_12_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_56_12_58_12_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_56_40_58_12_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 57 16 ]
+        symbol [ session %tmp.33 57 16 23 ];
+        %tmp.33 = getv ? :session;
+        symbol [ start %tmp.34 57 24 29 ];
+        %tmp.34 = getv function %tmp.33 :start;
+        invoke %tmp.33 %tmp.34();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_56_40_58_12_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_56_12_58_12_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_56_12_58_12_if_end:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_50_43_59_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_50_8_59_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_50_8_59_8_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 61 8 ]
+        symbol [ Sensor %tmp.35 61 8 14 ];
+        %tmp.35 = getm $.Toybox.Sensor;
+        symbol [ setEnabledSensors %tmp.36 61 15 32 ];
+        %tmp.36 = getv function %tmp.35 :setEnabledSensors;
+        %tmp.37 = newa 1;
+        symbol [ Sensor %tmp.38 61 34 40 ];
+        %tmp.38 = getm $.Toybox.Sensor;
+        symbol [ SENSOR_HEARTRATE %tmp.39 61 41 57 ];
+        %tmp.39 = getv %tmp.38 :SENSOR_HEARTRATE;
+        %tmp.40 = dup %tmp.37;
+        %tmp.41 = aputv %tmp.40 0 %tmp.39;
+        invoke %tmp.35 %tmp.36(%tmp.41);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 62 8 ]
+        symbol [ Sensor %tmp.42 62 8 14 ];
+        %tmp.42 = getm $.Toybox.Sensor;
+        symbol [ enableSensorEvents %tmp.43 62 15 33 ];
+        %tmp.43 = getv function %tmp.42 :enableSensorEvents;
+        %tmp.44 = self;
+        symbol [ method %tmp.45 62 34 40 ];
+        %tmp.45 = getv function %tmp.44 :method;
+        %tmp.47 = const :onSensor;
+        symbol [ onSensor %tmp.47 62 42 50 const ];
+        %tmp.48 = invoke %tmp.44 %tmp.45(%tmp.47);
+        invoke %tmp.42 %tmp.43(%tmp.48);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 63 8 ]
+        symbol [ Position %tmp.49 63 8 16 ];
+        %tmp.49 = getm $.Toybox.Position;
+        symbol [ enableLocationEvents %tmp.50 63 17 37 ];
+        %tmp.50 = getv function %tmp.49 :enableLocationEvents;
+        symbol [ Position %tmp.51 63 38 46 ];
+        %tmp.51 = getm $.Toybox.Position;
+        symbol [ LOCATION_CONTINUOUS %tmp.52 63 47 66 ];
+        %tmp.52 = getv %tmp.51 :LOCATION_CONTINUOUS;
+        %tmp.53 = self;
+        symbol [ method %tmp.54 63 68 74 ];
+        %tmp.54 = getv function %tmp.53 :method;
+        %tmp.56 = const :onPosition;
+        symbol [ onPosition %tmp.56 63 76 86 const ];
+        %tmp.57 = invoke %tmp.53 %tmp.54(%tmp.56);
+        invoke %tmp.49 %tmp.50(%tmp.52, %tmp.57);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_49_30_64_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 66; @symbol_functiondef = [onSensor,66,13,21]; @symbol_param<0> = [info,66,22,26]; @symbol_param<0>_type<0> = [Sensor,66,30,36]; @symbol_param<0>_type<1> = [Info,66,37,41]; ]
+    function onSensor(info as Sensor.Info) as Void {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_66_51_70_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 67 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_8_69_8_if_stmt:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_12_67_46_begin:
+        %tmp.1 = lgetv %info;
+        symbol [ info %tmp.1 67 12 16 ];
+        %tmp.2 = null;
+        %tmp.3 = ne %tmp.1 %tmp.2;
+        bf %tmp.3 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_8_69_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_28_67_46_true:
+        %tmp.4 = lgetv %info;
+        symbol [ info %tmp.4 67 28 32 ];
+        %tmp.5 = as %tmp.4 { (!Null) };
+        symbol [ heartRate %tmp.6 67 33 42 ];
+        %tmp.6 = getv %tmp.5 :heartRate;
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        push %tmp.8;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_28_67_46_end:
+        %tmp.9 = phi [%tmp.3 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_12_67_46_begin] [%tmp.8 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_28_67_46_true] [%tmp.9 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_28_67_46_end];
+        bf %tmp.9 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_8_69_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_8_69_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_52_69_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 68 12 ]
+        symbol [ model %tmp.10 68 12 17 ];
+        %tmp.10 = getv self :model;
+        %tmp.11 = lgetv %info;
+        symbol [ info %tmp.11 68 30 34 ];
+        %tmp.12 = as %tmp.11 { (!Null) };
+        symbol [ heartRate %tmp.13 68 35 44 ];
+        %tmp.13 = getv %tmp.12 :heartRate;
+        symbol [ heartRate ? 68 18 27 ];
+        putv %tmp.10 :heartRate %tmp.13;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_52_69_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_8_69_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_67_8_69_8_if_end:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_66_51_70_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 72; @symbol_functiondef = [onPosition,72,13,23]; @symbol_param<0> = [info,72,24,28]; @symbol_param<0>_type<0> = [Position,72,32,40]; @symbol_param<0>_type<1> = [Info,72,41,45]; ]
+    function onPosition(info as Position.Info) as Void {
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 76; @symbol_functiondef = [onTick,76,13,19]; ]
+    function onTick() {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_76_22_88_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 77 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_8_86_8_if_stmt:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_12_77_36_begin:
+        symbol [ model %tmp.2 77 12 17 ];
+        %tmp.2 = getv ? :model;
+        symbol [ started %tmp.3 77 18 25 ];
+        %tmp.3 = getv %tmp.2 :started;
+        bf %tmp.3 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_8_86_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_29_77_36_true:
+        symbol [ model %tmp.5 77 30 35 ];
+        %tmp.5 = getv ? :model;
+        symbol [ finished %tmp.6 77 36 44 ];
+        %tmp.6 = getv %tmp.5 :finished;
+        %tmp.7 = not %tmp.6;
+        push %tmp.7;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_29_77_36_end:
+        %tmp.8 = phi [%tmp.3 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_12_77_36_begin] [%tmp.7 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_29_77_36_true] [%tmp.8 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_29_77_36_end];
+        bf %tmp.8 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_8_86_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_8_86_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_46_86_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 78 12 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_46_86_8_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_46_86_8_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 78 16 20 ];
+        symbol [ Activity %tmp.9 78 23 31 ];
+        %tmp.9 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.10 78 32 47 ];
+        %tmp.10 = getv function %tmp.9 :getActivityInfo;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %info.1 %tmp.11;
+        symbol [ info %info.1 78 16 20 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 79 12 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_79_12_84_12_if_stmt:
+        %tmp.12 = lgetv %info.1;
+        symbol [ info %tmp.12 79 16 20 ];
+        %tmp.13 = null;
+        %tmp.14 = ne %tmp.12 %tmp.13;
+        bf %tmp.14 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_79_12_84_12_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_79_12_84_12_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_79_30_84_12_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 80 16 ]
+        symbol [ model %tmp.15 80 16 21 ];
+        %tmp.15 = getv self :model;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_begin:
+        %tmp.16 = lgetv %info.1;
+        symbol [ info %tmp.16 80 34 38 ];
+        %tmp.17 = as %tmp.16 { (!Null) };
+        symbol [ currentHeartRate %tmp.18 80 39 55 ];
+        %tmp.18 = getv %tmp.17 :currentHeartRate;
+        %tmp.19 = null;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bf %tmp.20 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_true:
+        symbol [ model %tmp.22 80 66 71 ];
+        %tmp.22 = getv ? :model;
+        symbol [ heartRate %tmp.23 80 72 81 ];
+        %tmp.23 = getv %tmp.22 :heartRate;
+        push %tmp.23;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_else_false:
+        %tmp.24 = lgetv %info.1;
+        symbol [ info %tmp.24 80 84 88 ];
+        %tmp.25 = as %tmp.24 { (!Null) };
+        symbol [ currentHeartRate %tmp.26 80 89 105 ];
+        %tmp.26 = getv %tmp.25 :currentHeartRate;
+        push %tmp.26;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_end:
+        %tmp.27 = phi [%tmp.20 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_begin] [%tmp.23 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_true] [%tmp.26 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_else_false] [%tmp.27 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_80_34_80_89_end];
+        symbol [ heartRate ? 80 22 31 ];
+        putv %tmp.15 :heartRate %tmp.27;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 81 16 ]
+        symbol [ model %tmp.28 81 16 21 ];
+        %tmp.28 = getv self :model;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_begin:
+        %tmp.29 = lgetv %info.1;
+        symbol [ info %tmp.29 81 33 37 ];
+        %tmp.30 = as %tmp.29 { (!Null) };
+        symbol [ currentSpeed %tmp.31 81 38 50 ];
+        %tmp.31 = getv %tmp.30 :currentSpeed;
+        %tmp.32 = null;
+        %tmp.33 = eq %tmp.31 %tmp.32;
+        bf %tmp.33 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_true:
+        %tmp.34 = 0.0;
+        push %tmp.34;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_else_false:
+        %tmp.35 = lgetv %info.1;
+        symbol [ info %tmp.35 81 67 71 ];
+        %tmp.36 = as %tmp.35 { (!Null) };
+        symbol [ currentSpeed %tmp.37 81 72 84 ];
+        %tmp.37 = getv %tmp.36 :currentSpeed;
+        %tmp.38 = 3.6;
+        %tmp.39 = mul %tmp.37 %tmp.38;
+        push %tmp.39;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_end:
+        %tmp.40 = phi [%tmp.33 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_begin] [%tmp.34 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_true] [%tmp.39 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_else_false] [%tmp.40 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_81_33_81_87_end];
+        symbol [ speedKmh ? 81 22 30 ];
+        putv %tmp.28 :speedKmh %tmp.40;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 82 16 ]
+        symbol [ model %tmp.41 82 16 21 ];
+        %tmp.41 = getv self :model;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_begin:
+        %tmp.42 = lgetv %info.1;
+        symbol [ info %tmp.42 82 40 44 ];
+        %tmp.43 = as %tmp.42 { (!Null) };
+        symbol [ averageSpeed %tmp.44 82 45 57 ];
+        %tmp.44 = getv %tmp.43 :averageSpeed;
+        %tmp.45 = null;
+        %tmp.46 = eq %tmp.44 %tmp.45;
+        bf %tmp.46 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_true:
+        %tmp.47 = 0.0;
+        push %tmp.47;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_else_false:
+        %tmp.48 = lgetv %info.1;
+        symbol [ info %tmp.48 82 74 78 ];
+        %tmp.49 = as %tmp.48 { (!Null) };
+        symbol [ averageSpeed %tmp.50 82 79 91 ];
+        %tmp.50 = getv %tmp.49 :averageSpeed;
+        %tmp.51 = 3.6;
+        %tmp.52 = mul %tmp.50 %tmp.51;
+        push %tmp.52;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_end:
+        %tmp.53 = phi [%tmp.46 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_begin] [%tmp.47 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_true] [%tmp.52 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_else_false] [%tmp.53 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_82_40_82_94_end];
+        symbol [ averageSpeedKmh ? 82 22 37 ];
+        putv %tmp.41 :averageSpeedKmh %tmp.53;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 83 16 ]
+        symbol [ model %tmp.54 83 16 21 ];
+        %tmp.54 = getv self :model;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_begin:
+        %tmp.55 = lgetv %info.1;
+        symbol [ info %tmp.55 83 35 39 ];
+        %tmp.56 = as %tmp.55 { (!Null) };
+        symbol [ elapsedDistance %tmp.57 83 40 55 ];
+        %tmp.57 = getv %tmp.56 :elapsedDistance;
+        %tmp.58 = null;
+        %tmp.59 = eq %tmp.57 %tmp.58;
+        bf %tmp.59 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_true:
+        %tmp.60 = 0.0;
+        push %tmp.60;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_else_false:
+        %tmp.61 = lgetv %info.1;
+        symbol [ info %tmp.61 83 72 76 ];
+        %tmp.62 = as %tmp.61 { (!Null) };
+        symbol [ elapsedDistance %tmp.63 83 77 92 ];
+        %tmp.63 = getv %tmp.62 :elapsedDistance;
+        %tmp.64 = 1000.0;
+        %tmp.65 = div %tmp.63 %tmp.64;
+        push %tmp.65;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_end:
+        %tmp.66 = phi [%tmp.59 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_begin] [%tmp.60 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_true] [%tmp.65 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_else_false] [%tmp.66 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_83_35_83_95_end];
+        symbol [ distanceKm ? 83 22 32 ];
+        putv %tmp.54 :distanceKm %tmp.66;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_79_30_84_12_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_79_12_84_12_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_79_12_84_12_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 85 12 ]
+        %tmp.67 = self;
+        symbol [ checkTimeAlert %tmp.68 85 12 26 ];
+        %tmp.68 = getv function %tmp.67 :checkTimeAlert;
+        symbol [ model %tmp.70 85 27 32 ];
+        %tmp.70 = getv ? :model;
+        symbol [ remainingSeconds %tmp.71 85 33 49 ];
+        %tmp.71 = getv function %tmp.70 :remainingSeconds;
+        %tmp.72 = invoke %tmp.70 %tmp.71();
+        invoke %tmp.67 %tmp.68(%tmp.72);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_46_86_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_8_86_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_77_8_86_8_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 87 8 ]
+        symbol [ WatchUi %tmp.73 87 8 15 ];
+        %tmp.73 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.74 87 16 29 ];
+        %tmp.74 = getv function %tmp.73 :requestUpdate;
+        invoke %tmp.73 %tmp.74();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_76_22_88_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 90; @symbol_functiondef = [checkTimeAlert,90,13,27]; @symbol_param<0> = [remaining,90,28,37]; ]
+    function checkTimeAlert(remaining) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_90_39_102_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 91 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_90_39_102_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_90_39_102_4_stop" ]
+        %level.1 = local;
+        symbol [ level %level.1 91 12 17 ];
+        %tmp.1 = 0;
+        lputv %level.1 %tmp.1;
+        symbol [ level %level.1 91 12 17 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 92 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_92_8_92_44_if_stmt:
+        %tmp.2 = lgetv %remaining;
+        symbol [ remaining %tmp.2 92 12 21 ];
+        %tmp.3 = 3600;
+        %tmp.4 = lte %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_92_8_92_44_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_92_8_92_44_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_92_31_92_44_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 92 33 ]
+        %tmp.5 = 1;
+        lputv %level.1 %tmp.5;
+        symbol [ level %level.1 92 33 38 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_92_31_92_44_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_92_8_92_44_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_92_8_92_44_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 93 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_93_8_93_44_if_stmt:
+        %tmp.6 = lgetv %remaining;
+        symbol [ remaining %tmp.6 93 12 21 ];
+        %tmp.7 = 1800;
+        %tmp.8 = lte %tmp.6 %tmp.7;
+        bf %tmp.8 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_93_8_93_44_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_93_8_93_44_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_93_31_93_44_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 93 33 ]
+        %tmp.9 = 2;
+        lputv %level.1 %tmp.9;
+        symbol [ level %level.1 93 33 38 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_93_31_93_44_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_93_8_93_44_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_93_8_93_44_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 94 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_94_8_94_43_if_stmt:
+        %tmp.10 = lgetv %remaining;
+        symbol [ remaining %tmp.10 94 12 21 ];
+        %tmp.11 = 900;
+        %tmp.12 = lte %tmp.10 %tmp.11;
+        bf %tmp.12 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_94_8_94_43_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_94_8_94_43_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_94_30_94_43_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 94 32 ]
+        %tmp.13 = 3;
+        lputv %level.1 %tmp.13;
+        symbol [ level %level.1 94 32 37 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_94_30_94_43_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_94_8_94_43_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_94_8_94_43_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 95 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_95_8_95_43_if_stmt:
+        %tmp.14 = lgetv %remaining;
+        symbol [ remaining %tmp.14 95 12 21 ];
+        %tmp.15 = 300;
+        %tmp.16 = lte %tmp.14 %tmp.15;
+        bf %tmp.16 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_95_8_95_43_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_95_8_95_43_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_95_30_95_43_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 95 32 ]
+        %tmp.17 = 4;
+        lputv %level.1 %tmp.17;
+        symbol [ level %level.1 95 32 37 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_95_30_95_43_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_95_8_95_43_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_95_8_95_43_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 96 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_96_8_96_41_if_stmt:
+        %tmp.18 = lgetv %remaining;
+        symbol [ remaining %tmp.18 96 12 21 ];
+        %tmp.19 = 0;
+        %tmp.20 = lte %tmp.18 %tmp.19;
+        bf %tmp.20 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_96_8_96_41_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_96_8_96_41_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_96_28_96_41_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 96 30 ]
+        %tmp.21 = 5;
+        lputv %level.1 %tmp.21;
+        symbol [ level %level.1 96 30 35 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_96_28_96_41_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_96_8_96_41_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_96_8_96_41_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 98 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_98_8_101_8_if_stmt:
+        %tmp.22 = lgetv %level.1;
+        symbol [ level %tmp.22 98 12 17 ];
+        symbol [ lastAlertLevel %tmp.24 98 20 34 ];
+        %tmp.24 = getv ? :lastAlertLevel;
+        %tmp.25 = gt %tmp.22 %tmp.24;
+        bf %tmp.25 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_98_8_101_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_98_8_101_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_98_36_101_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 99 12 ]
+        %tmp.26 = lgetv %level.1;
+        symbol [ level %tmp.26 99 29 34 ];
+        symbol [ lastAlertLevel ? 99 12 26 ];
+        putv self :lastAlertLevel %tmp.26;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 100 12 ]
+        symbol [ Attention %tmp.27 100 12 21 ];
+        %tmp.27 = getm $.Toybox.Attention;
+        symbol [ vibrate %tmp.28 100 22 29 ];
+        %tmp.28 = getv function %tmp.27 :vibrate;
+        %tmp.29 = newa 1;
+        symbol [ Attention %tmp.32 100 35 44 ];
+        %tmp.32 = getm $.Toybox.Attention;
+        symbol [ VibeProfile %tmp.33 100 45 56 ];
+        %tmp.33 = getv function ? %tmp.32 :VibeProfile;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_begin:
+        %tmp.34 = lgetv %level.1;
+        symbol [ level %tmp.34 100 57 62 ];
+        %tmp.35 = 4;
+        %tmp.36 = gte %tmp.34 %tmp.35;
+        bf %tmp.36 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_true:
+        %tmp.37 = 100;
+        push %tmp.37;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_else_false:
+        %tmp.38 = 70;
+        push %tmp.38;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_end:
+        %tmp.39 = phi [%tmp.36 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_begin] [%tmp.37 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_true] [%tmp.38 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_else_false] [%tmp.39 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_57_100_76_end];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_begin:
+        %tmp.40 = lgetv %level.1;
+        symbol [ level %tmp.40 100 80 85 ];
+        %tmp.41 = 4;
+        %tmp.42 = gte %tmp.40 %tmp.41;
+        bf %tmp.42 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_true:
+        %tmp.43 = 800;
+        push %tmp.43;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_else_false:
+        %tmp.44 = 400;
+        push %tmp.44;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_end:
+        %tmp.45 = phi [%tmp.42 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_begin] [%tmp.43 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_true] [%tmp.44 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_else_false] [%tmp.45 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_100_80_100_99_end];
+        %tmp.30 = newc %tmp.33 (%tmp.39, %tmp.45);
+        %tmp.46 = dup %tmp.29;
+        %tmp.47 = aputv %tmp.46 0 %tmp.30;
+        invoke %tmp.27 %tmp.28(%tmp.47);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_98_36_101_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_98_8_101_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_98_8_101_8_if_end:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_90_39_102_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 104; @symbol_functiondef = [finishDay,104,13,22]; ]
+    function finishDay() {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_104_25_114_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 105 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_105_8_109_8_if_stmt:
+        symbol [ session %tmp.2 105 12 19 ];
+        %tmp.2 = getv ? :session;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_105_8_109_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_105_8_109_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_105_29_109_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 106 12 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_106_12_106_57_if_stmt:
+        symbol [ session %tmp.6 106 16 23 ];
+        %tmp.6 = getv ? :session;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ isRecording %tmp.8 106 24 35 ];
+        %tmp.8 = getv function %tmp.7 :isRecording;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        bf %tmp.9 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_106_12_106_57_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_106_12_106_57_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_106_39_106_57_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 106 41 ]
+        symbol [ session %tmp.11 106 41 48 ];
+        %tmp.11 = getv ? :session;
+        symbol [ stop %tmp.12 106 49 53 ];
+        %tmp.12 = getv function %tmp.11 :stop;
+        invoke %tmp.11 %tmp.12();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_106_39_106_57_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_106_12_106_57_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_106_12_106_57_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 107 12 ]
+        symbol [ session %tmp.14 107 12 19 ];
+        %tmp.14 = getv ? :session;
+        symbol [ save %tmp.15 107 20 24 ];
+        %tmp.15 = getv function %tmp.14 :save;
+        invoke %tmp.14 %tmp.15();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 108 12 ]
+        %tmp.16 = null;
+        symbol [ session ? 108 12 19 ];
+        putv self :session %tmp.16;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_105_29_109_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_105_8_109_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_105_8_109_8_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 110 8 ]
+        symbol [ model %tmp.18 110 8 13 ];
+        %tmp.18 = getv ? :model;
+        symbol [ markFinished %tmp.19 110 14 26 ];
+        %tmp.19 = getv function %tmp.18 :markFinished;
+        invoke %tmp.18 %tmp.19();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 111 8 ]
+        symbol [ Sensor %tmp.20 111 8 14 ];
+        %tmp.20 = getm $.Toybox.Sensor;
+        symbol [ enableSensorEvents %tmp.21 111 15 33 ];
+        %tmp.21 = getv function %tmp.20 :enableSensorEvents;
+        %tmp.22 = null;
+        invoke %tmp.20 %tmp.21(%tmp.22);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 112 8 ]
+        symbol [ Position %tmp.23 112 8 16 ];
+        %tmp.23 = getm $.Toybox.Position;
+        symbol [ enableLocationEvents %tmp.24 112 17 37 ];
+        %tmp.24 = getv function %tmp.23 :enableLocationEvents;
+        symbol [ Position %tmp.25 112 38 46 ];
+        %tmp.25 = getm $.Toybox.Position;
+        symbol [ LOCATION_DISABLE %tmp.26 112 47 63 ];
+        %tmp.26 = getv %tmp.25 :LOCATION_DISABLE;
+        %tmp.27 = null;
+        invoke %tmp.23 %tmp.24(%tmp.26, %tmp.27);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 113 8 ]
+        symbol [ WatchUi %tmp.28 113 8 15 ];
+        %tmp.28 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.29 113 16 29 ];
+        %tmp.29 = getv function %tmp.28 :requestUpdate;
+        invoke %tmp.28 %tmp.29();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_104_25_114_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 116; @symbol_functiondef = [discardDay,116,13,23]; ]
+    function discardDay() {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_116_26_126_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 117 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_117_8_121_8_if_stmt:
+        symbol [ session %tmp.2 117 12 19 ];
+        %tmp.2 = getv ? :session;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_117_8_121_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_117_8_121_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_117_29_121_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 118 12 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_118_12_118_57_if_stmt:
+        symbol [ session %tmp.6 118 16 23 ];
+        %tmp.6 = getv ? :session;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ isRecording %tmp.8 118 24 35 ];
+        %tmp.8 = getv function %tmp.7 :isRecording;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        bf %tmp.9 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_118_12_118_57_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_118_12_118_57_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_118_39_118_57_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 118 41 ]
+        symbol [ session %tmp.11 118 41 48 ];
+        %tmp.11 = getv ? :session;
+        symbol [ stop %tmp.12 118 49 53 ];
+        %tmp.12 = getv function %tmp.11 :stop;
+        invoke %tmp.11 %tmp.12();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_118_39_118_57_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_118_12_118_57_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_118_12_118_57_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 119 12 ]
+        symbol [ session %tmp.14 119 12 19 ];
+        %tmp.14 = getv ? :session;
+        symbol [ discard %tmp.15 119 20 27 ];
+        %tmp.15 = getv function %tmp.14 :discard;
+        invoke %tmp.14 %tmp.15();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 120 12 ]
+        %tmp.16 = null;
+        symbol [ session ? 120 12 19 ];
+        putv self :session %tmp.16;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_117_29_121_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_117_8_121_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_117_8_121_8_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 122 8 ]
+        symbol [ model %tmp.18 122 8 13 ];
+        %tmp.18 = getv ? :model;
+        symbol [ reset %tmp.19 122 14 19 ];
+        %tmp.19 = getv function %tmp.18 :reset;
+        invoke %tmp.18 %tmp.19();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 123 8 ]
+        symbol [ Sensor %tmp.20 123 8 14 ];
+        %tmp.20 = getm $.Toybox.Sensor;
+        symbol [ enableSensorEvents %tmp.21 123 15 33 ];
+        %tmp.21 = getv function %tmp.20 :enableSensorEvents;
+        %tmp.22 = null;
+        invoke %tmp.20 %tmp.21(%tmp.22);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 124 8 ]
+        symbol [ Position %tmp.23 124 8 16 ];
+        %tmp.23 = getm $.Toybox.Position;
+        symbol [ enableLocationEvents %tmp.24 124 17 37 ];
+        %tmp.24 = getv function %tmp.23 :enableLocationEvents;
+        symbol [ Position %tmp.25 124 38 46 ];
+        %tmp.25 = getm $.Toybox.Position;
+        symbol [ LOCATION_DISABLE %tmp.26 124 47 63 ];
+        %tmp.26 = getv %tmp.25 :LOCATION_DISABLE;
+        %tmp.27 = null;
+        invoke %tmp.23 %tmp.24(%tmp.26, %tmp.27);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc" 125 8 ]
+        symbol [ WatchUi %tmp.28 125 8 15 ];
+        %tmp.28 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.29 125 16 29 ];
+        %tmp.29 = getv function %tmp.28 :requestUpdate;
+        invoke %tmp.28 %tmp.29();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptApp_mc_116_26_126_4_stop:
+    }
+}
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptApp.mc"; @line = 1; ]
+<init> {
+}

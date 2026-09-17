@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\thoma\Documents\GitHub\TMPT-Garmin\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="1" lineNum="4" parent="globals/TmptView" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="c:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\bin\\gen\\006-B4587-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435472" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="3" lineNum="65" parent="globals/TmptAdjustmentDelegate" pc="268435492" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="4" lineNum="95" parent="globals/TmptFinishDelegate" pc="268435504" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="5" lineNum="3" parent="globals/TmptDelegate" pc="268435516" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="6" lineNum="10" parent="globals/TmptApp" pc="268435528" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="7" lineNum="18" parent="globals/TmptView" pc="268435540" symbol="previousPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="7" lineNum="19" parent="globals/TmptView" pc="268435542" symbol="previousPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="7" lineNum="20" parent="globals/TmptView" pc="268435557" symbol="previousPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="7" lineNum="20" parent="globals/TmptView" pc="268435567" symbol="previousPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="7" lineNum="21" parent="globals/TmptView" pc="268435579" symbol="previousPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="8" lineNum="131" parent="globals/TmptView" pc="268435591" symbol="formatShort"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="8" lineNum="132" parent="globals/TmptView" pc="268435594" symbol="formatShort"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="8" lineNum="133" parent="globals/TmptView" pc="268435601" symbol="formatShort"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="8" lineNum="134" parent="globals/TmptView" pc="268435608" symbol="formatShort"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="8" lineNum="135" parent="globals/TmptView" pc="268435615" symbol="formatShort"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="8" lineNum="136" parent="globals/TmptView" pc="268435622" symbol="formatShort"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="8" lineNum="138" parent="globals/TmptView" pc="268435654" symbol="formatShort"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="9" lineNum="13" parent="globals/TmptView" pc="268435668" symbol="nextPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="9" lineNum="14" parent="globals/TmptView" pc="268435670" symbol="nextPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="9" lineNum="15" parent="globals/TmptView" pc="268435688" symbol="nextPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="49" parent="globals/TmptView" pc="268435700" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="50" parent="globals/TmptView" pc="268435703" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="52" parent="globals/TmptView" pc="268435759" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="53" parent="globals/TmptView" pc="268435772" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="54" parent="globals/TmptView" pc="268435778" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="54" parent="globals/TmptView" pc="268435787" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="55" parent="globals/TmptView" pc="268435797" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="55" parent="globals/TmptView" pc="268435806" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="57" parent="globals/TmptView" pc="268435816" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="58" parent="globals/TmptView" pc="268435862" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="60" parent="globals/TmptView" pc="268435899" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="61" parent="globals/TmptView" pc="268435913" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="62" parent="globals/TmptView" pc="268435927" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="63" parent="globals/TmptView" pc="268435971" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="64" parent="globals/TmptView" pc="268436023" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="65" parent="globals/TmptView" pc="268436077" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="10" lineNum="67" parent="globals/TmptView" pc="268436147" symbol="drawTimePage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="11" lineNum="117" parent="globals/TmptView" pc="268436181" symbol="formatTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="11" lineNum="118" parent="globals/TmptView" pc="268436184" symbol="formatTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="11" lineNum="119" parent="globals/TmptView" pc="268436193" symbol="formatTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="11" lineNum="120" parent="globals/TmptView" pc="268436201" symbol="formatTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="11" lineNum="121" parent="globals/TmptView" pc="268436212" symbol="formatTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="11" lineNum="122" parent="globals/TmptView" pc="268436219" symbol="formatTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="12" lineNum="125" parent="globals/TmptView" pc="268436276" symbol="formatSignedTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="12" lineNum="126" parent="globals/TmptView" pc="268436279" symbol="formatSignedTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="12" lineNum="127" parent="globals/TmptView" pc="268436301" symbol="formatSignedTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="12" lineNum="128" parent="globals/TmptView" pc="268436319" symbol="formatSignedTime"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="13" lineNum="96" parent="globals/TmptView" pc="268436333" symbol="drawPair"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="13" lineNum="97" parent="globals/TmptView" pc="268436336" symbol="drawPair"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="13" lineNum="98" parent="globals/TmptView" pc="268436350" symbol="drawPair"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="13" lineNum="99" parent="globals/TmptView" pc="268436367" symbol="drawPair"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="13" lineNum="100" parent="globals/TmptView" pc="268436386" symbol="drawPair"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="13" lineNum="101" parent="globals/TmptView" pc="268436400" symbol="drawPair"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="14" lineNum="113" parent="globals/TmptView" pc="268436422" symbol="percent"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="14" lineNum="114" parent="globals/TmptView" pc="268436424" symbol="percent"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="15" lineNum="108" parent="globals/TmptView" pc="268436433" symbol="drawAt"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="15" lineNum="109" parent="globals/TmptView" pc="268436435" symbol="drawAt"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="15" lineNum="110" parent="globals/TmptView" pc="268436449" symbol="drawAt"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="16" lineNum="104" parent="globals/TmptView" pc="268436470" symbol="drawCentered"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="16" lineNum="105" parent="globals/TmptView" pc="268436472" symbol="drawCentered"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="17" lineNum="42" parent="globals/TmptView" pc="268436502" symbol="drawStartPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="17" lineNum="43" parent="globals/TmptView" pc="268436504" symbol="drawStartPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="17" lineNum="44" parent="globals/TmptView" pc="268436538" symbol="drawStartPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="17" lineNum="45" parent="globals/TmptView" pc="268436573" symbol="drawStartPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="17" lineNum="46" parent="globals/TmptView" pc="268436607" symbol="drawStartPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="18" lineNum="90" parent="globals/TmptView" pc="268436642" symbol="drawMetric"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="18" lineNum="91" parent="globals/TmptView" pc="268436644" symbol="drawMetric"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="18" lineNum="92" parent="globals/TmptView" pc="268436667" symbol="drawMetric"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="18" lineNum="93" parent="globals/TmptView" pc="268436688" symbol="drawMetric"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="19" lineNum="8" parent="globals/TmptView" pc="268436711" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="19" lineNum="9" parent="globals/TmptView" pc="268436713" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="19" lineNum="10" parent="globals/TmptView" pc="268436725" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="70" parent="globals/TmptView" pc="268436735" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="71" parent="globals/TmptView" pc="268436738" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="73" parent="globals/TmptView" pc="268436773" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="74" parent="globals/TmptView" pc="268436787" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="75" parent="globals/TmptView" pc="268436801" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="76" parent="globals/TmptView" pc="268436815" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="77" parent="globals/TmptView" pc="268436829" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="78" parent="globals/TmptView" pc="268436843" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="79" parent="globals/TmptView" pc="268436857" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="80" parent="globals/TmptView" pc="268436871" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="82" parent="globals/TmptView" pc="268436885" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="83" parent="globals/TmptView" pc="268436958" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="84" parent="globals/TmptView" pc="268437014" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="85" parent="globals/TmptView" pc="268437071" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="20" lineNum="87" parent="globals/TmptView" pc="268437127" symbol="drawStatsPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="24" parent="globals/TmptView" pc="268437161" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="25" parent="globals/TmptView" pc="268437164" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="26" parent="globals/TmptView" pc="268437173" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="27" parent="globals/TmptView" pc="268437182" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="28" parent="globals/TmptView" pc="268437198" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="30" parent="globals/TmptView" pc="268437206" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="31" parent="globals/TmptView" pc="268437220" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="32" parent="globals/TmptView" pc="268437235" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="35" parent="globals/TmptView" pc="268437239" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="36" parent="globals/TmptView" pc="268437249" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptView.mc" id="21" lineNum="38" parent="globals/TmptView" pc="268437267" symbol="onUpdate"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="22" lineNum="69" parent="globals/TmptAdjustmentDelegate" pc="268437283" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="22" lineNum="70" parent="globals/TmptAdjustmentDelegate" pc="268437285" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="22" lineNum="71" parent="globals/TmptAdjustmentDelegate" pc="268437297" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="22" lineNum="72" parent="globals/TmptAdjustmentDelegate" pc="268437306" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="75" parent="globals/TmptAdjustmentDelegate" pc="268437316" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="76" parent="globals/TmptAdjustmentDelegate" pc="268437319" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="77" parent="globals/TmptAdjustmentDelegate" pc="268437328" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="77" parent="globals/TmptAdjustmentDelegate" pc="268437339" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="78" parent="globals/TmptAdjustmentDelegate" pc="268437359" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="78" parent="globals/TmptAdjustmentDelegate" pc="268437370" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="79" parent="globals/TmptAdjustmentDelegate" pc="268437390" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="79" parent="globals/TmptAdjustmentDelegate" pc="268437401" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="80" parent="globals/TmptAdjustmentDelegate" pc="268437421" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="80" parent="globals/TmptAdjustmentDelegate" pc="268437432" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="81" parent="globals/TmptAdjustmentDelegate" pc="268437452" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="81" parent="globals/TmptAdjustmentDelegate" pc="268437463" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="82" parent="globals/TmptAdjustmentDelegate" pc="268437483" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="82" parent="globals/TmptAdjustmentDelegate" pc="268437494" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="83" parent="globals/TmptAdjustmentDelegate" pc="268437514" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="83" parent="globals/TmptAdjustmentDelegate" pc="268437525" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="84" parent="globals/TmptAdjustmentDelegate" pc="268437540" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="84" parent="globals/TmptAdjustmentDelegate" pc="268437551" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="85" parent="globals/TmptAdjustmentDelegate" pc="268437566" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="86" parent="globals/TmptAdjustmentDelegate" pc="268437577" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="87" parent="globals/TmptAdjustmentDelegate" pc="268437592" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="88" parent="globals/TmptAdjustmentDelegate" pc="268437604" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="90" parent="globals/TmptAdjustmentDelegate" pc="268437608" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="23" lineNum="91" parent="globals/TmptAdjustmentDelegate" pc="268437623" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="24" lineNum="98" parent="globals/TmptFinishDelegate" pc="268437635" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="24" lineNum="99" parent="globals/TmptFinishDelegate" pc="268437637" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="24" lineNum="100" parent="globals/TmptFinishDelegate" pc="268437649" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="25" lineNum="103" parent="globals/TmptFinishDelegate" pc="268437659" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="25" lineNum="104" parent="globals/TmptFinishDelegate" pc="268437662" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="25" lineNum="105" parent="globals/TmptFinishDelegate" pc="268437671" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="25" lineNum="106" parent="globals/TmptFinishDelegate" pc="268437686" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="25" lineNum="106" parent="globals/TmptFinishDelegate" pc="268437697" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="25" lineNum="107" parent="globals/TmptFinishDelegate" pc="268437712" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="25" lineNum="107" parent="globals/TmptFinishDelegate" pc="268437723" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="26" lineNum="49" parent="globals/TmptDelegate" pc="268437739" symbol="onBack"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="26" lineNum="50" parent="globals/TmptDelegate" pc="268437741" symbol="onBack"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="26" lineNum="51" parent="globals/TmptDelegate" pc="268437768" symbol="onBack"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="26" lineNum="53" parent="globals/TmptDelegate" pc="268437778" symbol="onBack"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="22" parent="globals/TmptDelegate" pc="268437780" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="23" parent="globals/TmptDelegate" pc="268437783" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="23" parent="globals/TmptDelegate" pc="268437810" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="25" parent="globals/TmptDelegate" pc="268437815" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="26" parent="globals/TmptDelegate" pc="268437855" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="27" parent="globals/TmptDelegate" pc="268437899" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="28" parent="globals/TmptDelegate" pc="268437943" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="29" parent="globals/TmptDelegate" pc="268437987" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="30" parent="globals/TmptDelegate" pc="268438031" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="31" parent="globals/TmptDelegate" pc="268438075" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="32" parent="globals/TmptDelegate" pc="268438119" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="33" parent="globals/TmptDelegate" pc="268438163" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="34" parent="globals/TmptDelegate" pc="268438207" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="35" parent="globals/TmptDelegate" pc="268438251" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="27" lineNum="36" parent="globals/TmptDelegate" pc="268438296" symbol="onMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="28" lineNum="44" parent="globals/TmptDelegate" pc="268438298" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="28" lineNum="45" parent="globals/TmptDelegate" pc="268438300" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="28" lineNum="46" parent="globals/TmptDelegate" pc="268438317" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="29" lineNum="7" parent="globals/TmptDelegate" pc="268438319" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="29" lineNum="8" parent="globals/TmptDelegate" pc="268438321" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="29" lineNum="9" parent="globals/TmptDelegate" pc="268438333" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="29" lineNum="10" parent="globals/TmptDelegate" pc="268438342" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="30" lineNum="56" parent="globals/TmptDelegate" pc="268438352" symbol="showFinishMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="30" lineNum="57" parent="globals/TmptDelegate" pc="268438355" symbol="showFinishMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="30" lineNum="58" parent="globals/TmptDelegate" pc="268438395" symbol="showFinishMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="30" lineNum="59" parent="globals/TmptDelegate" pc="268438439" symbol="showFinishMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="30" lineNum="60" parent="globals/TmptDelegate" pc="268438483" symbol="showFinishMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="30" lineNum="61" parent="globals/TmptDelegate" pc="268438527" symbol="showFinishMenu"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="31" lineNum="13" parent="globals/TmptDelegate" pc="268438568" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="31" lineNum="14" parent="globals/TmptDelegate" pc="268438570" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="31" lineNum="15" parent="globals/TmptDelegate" pc="268438597" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="31" lineNum="17" parent="globals/TmptDelegate" pc="268438612" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="31" lineNum="19" parent="globals/TmptDelegate" pc="268438619" symbol="onSelect"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="32" lineNum="39" parent="globals/TmptDelegate" pc="268438621" symbol="onNextPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="32" lineNum="40" parent="globals/TmptDelegate" pc="268438623" symbol="onNextPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptDelegate.mc" id="32" lineNum="41" parent="globals/TmptDelegate" pc="268438640" symbol="onNextPage"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="43" parent="globals/TmptModel" pc="268438642" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="44" parent="globals/TmptModel" pc="268438644" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="45" parent="globals/TmptModel" pc="268438667" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="46" parent="globals/TmptModel" pc="268438690" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="47" parent="globals/TmptModel" pc="268438713" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="48" parent="globals/TmptModel" pc="268438736" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="49" parent="globals/TmptModel" pc="268438759" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="50" parent="globals/TmptModel" pc="268438782" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="51" parent="globals/TmptModel" pc="268438805" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="33" lineNum="52" parent="globals/TmptModel" pc="268438828" symbol="save"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="34" lineNum="68" parent="globals/TmptModel" pc="268438852" symbol="markFinished"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="34" lineNum="69" parent="globals/TmptModel" pc="268438854" symbol="markFinished"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="34" lineNum="70" parent="globals/TmptModel" pc="268438877" symbol="markFinished"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="34" lineNum="71" parent="globals/TmptModel" pc="268438885" symbol="markFinished"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="27" parent="globals/TmptModel" pc="268438893" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="28" parent="globals/TmptModel" pc="268438895" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="29" parent="globals/TmptModel" pc="268438928" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="30" parent="globals/TmptModel" pc="268438961" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="31" parent="globals/TmptModel" pc="268438994" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="32" parent="globals/TmptModel" pc="268439027" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="33" parent="globals/TmptModel" pc="268439060" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="34" parent="globals/TmptModel" pc="268439093" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="35" parent="globals/TmptModel" pc="268439126" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="35" lineNum="36" parent="globals/TmptModel" pc="268439159" symbol="load"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="36" lineNum="128" parent="globals/TmptModel" pc="268439193" symbol="elapsedSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="36" lineNum="129" parent="globals/TmptModel" pc="268439196" symbol="elapsedSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="36" lineNum="129" parent="globals/TmptModel" pc="268439215" symbol="elapsedSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="36" lineNum="130" parent="globals/TmptModel" pc="268439220" symbol="elapsedSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="36" lineNum="131" parent="globals/TmptModel" pc="268439264" symbol="elapsedSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="36" lineNum="132" parent="globals/TmptModel" pc="268439274" symbol="elapsedSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="112" parent="globals/TmptModel" pc="268439288" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="113" parent="globals/TmptModel" pc="268439290" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="114" parent="globals/TmptModel" pc="268439301" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="115" parent="globals/TmptModel" pc="268439319" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="115" parent="globals/TmptModel" pc="268439329" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="116" parent="globals/TmptModel" pc="268439343" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="117" parent="globals/TmptModel" pc="268439354" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="118" parent="globals/TmptModel" pc="268439372" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="118" parent="globals/TmptModel" pc="268439382" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="119" parent="globals/TmptModel" pc="268439396" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="120" parent="globals/TmptModel" pc="268439407" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="121" parent="globals/TmptModel" pc="268439422" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="121" parent="globals/TmptModel" pc="268439432" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="123" parent="globals/TmptModel" pc="268439446" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="124" parent="globals/TmptModel" pc="268439454" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="37" lineNum="125" parent="globals/TmptModel" pc="268439462" symbol="undoLast"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="38" lineNum="91" parent="globals/TmptModel" pc="268439470" symbol="addPenalty"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="38" lineNum="92" parent="globals/TmptModel" pc="268439472" symbol="addPenalty"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="38" lineNum="93" parent="globals/TmptModel" pc="268439487" symbol="addPenalty"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="38" lineNum="94" parent="globals/TmptModel" pc="268439496" symbol="addPenalty"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="38" lineNum="95" parent="globals/TmptModel" pc="268439505" symbol="addPenalty"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="39" lineNum="135" parent="globals/TmptModel" pc="268439513" symbol="correctedSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="39" lineNum="136" parent="globals/TmptModel" pc="268439516" symbol="correctedSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="39" lineNum="137" parent="globals/TmptModel" pc="268439536" symbol="correctedSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="40" lineNum="140" parent="globals/TmptModel" pc="268439550" symbol="remainingSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="40" lineNum="141" parent="globals/TmptModel" pc="268439552" symbol="remainingSeconds"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="41" lineNum="39" parent="globals/TmptModel" pc="268439564" symbol="valueOrDefault"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="41" lineNum="40" parent="globals/TmptModel" pc="268439566" symbol="valueOrDefault"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="42" lineNum="98" parent="globals/TmptModel" pc="268439580" symbol="addWaitCorrection"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="42" lineNum="99" parent="globals/TmptModel" pc="268439582" symbol="addWaitCorrection"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="42" lineNum="100" parent="globals/TmptModel" pc="268439597" symbol="addWaitCorrection"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="42" lineNum="101" parent="globals/TmptModel" pc="268439606" symbol="addWaitCorrection"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="42" lineNum="102" parent="globals/TmptModel" pc="268439615" symbol="addWaitCorrection"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="43" lineNum="105" parent="globals/TmptModel" pc="268439623" symbol="addPenaltyRound"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="43" lineNum="106" parent="globals/TmptModel" pc="268439625" symbol="addPenaltyRound"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="43" lineNum="107" parent="globals/TmptModel" pc="268439640" symbol="addPenaltyRound"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="43" lineNum="108" parent="globals/TmptModel" pc="268439649" symbol="addPenaltyRound"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="43" lineNum="109" parent="globals/TmptModel" pc="268439658" symbol="addPenaltyRound"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="74" parent="globals/TmptModel" pc="268439666" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="75" parent="globals/TmptModel" pc="268439668" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="76" parent="globals/TmptModel" pc="268439676" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="77" parent="globals/TmptModel" pc="268439684" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="78" parent="globals/TmptModel" pc="268439692" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="79" parent="globals/TmptModel" pc="268439700" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="80" parent="globals/TmptModel" pc="268439708" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="81" parent="globals/TmptModel" pc="268439716" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="82" parent="globals/TmptModel" pc="268439724" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="83" parent="globals/TmptModel" pc="268439732" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="84" parent="globals/TmptModel" pc="268439740" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="85" parent="globals/TmptModel" pc="268439748" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="86" parent="globals/TmptModel" pc="268439756" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="87" parent="globals/TmptModel" pc="268439764" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="44" lineNum="88" parent="globals/TmptModel" pc="268439772" symbol="reset"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="45" lineNum="23" parent="globals/TmptModel" pc="268439780" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="45" lineNum="24" parent="globals/TmptModel" pc="268439782" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="55" parent="globals/TmptModel" pc="268439790" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="56" parent="globals/TmptModel" pc="268439792" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="57" parent="globals/TmptModel" pc="268439800" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="58" parent="globals/TmptModel" pc="268439808" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="59" parent="globals/TmptModel" pc="268439831" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="60" parent="globals/TmptModel" pc="268439839" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="61" parent="globals/TmptModel" pc="268439847" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="62" parent="globals/TmptModel" pc="268439855" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="63" parent="globals/TmptModel" pc="268439863" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="64" parent="globals/TmptModel" pc="268439871" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptModel.mc" id="46" lineNum="65" parent="globals/TmptModel" pc="268439879" symbol="begin"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="47" lineNum="49" parent="globals/TmptApp" pc="268439887" symbol="enableTracking"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="47" lineNum="50" parent="globals/TmptApp" pc="268439889" symbol="enableTracking"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="47" lineNum="51" parent="globals/TmptApp" pc="268439904" symbol="enableTracking"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="47" lineNum="56" parent="globals/TmptApp" pc="268439954" symbol="enableTracking"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="47" lineNum="57" parent="globals/TmptApp" pc="268439969" symbol="enableTracking"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="47" lineNum="61" parent="globals/TmptApp" pc="268439987" symbol="enableTracking"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="47" lineNum="62" parent="globals/TmptApp" pc="268440005" symbol="enableTracking"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="47" lineNum="63" parent="globals/TmptApp" pc="268440031" symbol="enableTracking"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="76" parent="globals/TmptApp" pc="268440060" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="77" parent="globals/TmptApp" pc="268440063" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="78" parent="globals/TmptApp" pc="268440090" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="79" parent="globals/TmptApp" pc="268440102" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="80" parent="globals/TmptApp" pc="268440108" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="81" parent="globals/TmptApp" pc="268440150" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="82" parent="globals/TmptApp" pc="268440189" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="83" parent="globals/TmptApp" pc="268440228" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="85" parent="globals/TmptApp" pc="268440270" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="48" lineNum="87" parent="globals/TmptApp" pc="268440293" symbol="onTick"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="49" lineNum="72" parent="globals/TmptApp" pc="268440305" symbol="onPosition"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="50" lineNum="41" parent="globals/TmptApp" pc="268440308" symbol="startDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="50" lineNum="42" parent="globals/TmptApp" pc="268440310" symbol="startDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="50" lineNum="42" parent="globals/TmptApp" pc="268440337" symbol="startDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="50" lineNum="43" parent="globals/TmptApp" pc="268440341" symbol="startDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="50" lineNum="44" parent="globals/TmptApp" pc="268440353" symbol="startDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="50" lineNum="45" parent="globals/TmptApp" pc="268440361" symbol="startDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="50" lineNum="46" parent="globals/TmptApp" pc="268440368" symbol="startDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="51" lineNum="36" parent="globals/TmptApp" pc="268440380" symbol="getInitialView"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="51" lineNum="37" parent="globals/TmptApp" pc="268440382" symbol="getInitialView"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="51" lineNum="38" parent="globals/TmptApp" pc="268440412" symbol="getInitialView"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="52" lineNum="66" parent="globals/TmptApp" pc="268440452" symbol="onSensor"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="52" lineNum="67" parent="globals/TmptApp" pc="268440454" symbol="onSensor"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="52" lineNum="68" parent="globals/TmptApp" pc="268440471" symbol="onSensor"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="116" parent="globals/TmptApp" pc="268440493" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="117" parent="globals/TmptApp" pc="268440495" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="118" parent="globals/TmptApp" pc="268440504" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="118" parent="globals/TmptApp" pc="268440518" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="119" parent="globals/TmptApp" pc="268440533" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="120" parent="globals/TmptApp" pc="268440545" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="122" parent="globals/TmptApp" pc="268440556" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="123" parent="globals/TmptApp" pc="268440568" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="124" parent="globals/TmptApp" pc="268440582" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="53" lineNum="125" parent="globals/TmptApp" pc="268440598" symbol="discardDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="54" lineNum="23" parent="globals/TmptApp" pc="268440610" symbol="onStart"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="54" lineNum="24" parent="globals/TmptApp" pc="268440612" symbol="onStart"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="54" lineNum="25" parent="globals/TmptApp" pc="268440643" symbol="onStart"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="54" lineNum="26" parent="globals/TmptApp" pc="268440670" symbol="onStart"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="90" parent="globals/TmptApp" pc="268440681" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="91" parent="globals/TmptApp" pc="268440684" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="92" parent="globals/TmptApp" pc="268440687" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="92" parent="globals/TmptApp" pc="268440696" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="93" parent="globals/TmptApp" pc="268440703" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="93" parent="globals/TmptApp" pc="268440712" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="94" parent="globals/TmptApp" pc="268440719" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="94" parent="globals/TmptApp" pc="268440728" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="95" parent="globals/TmptApp" pc="268440735" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="95" parent="globals/TmptApp" pc="268440744" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="96" parent="globals/TmptApp" pc="268440751" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="96" parent="globals/TmptApp" pc="268440758" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="98" parent="globals/TmptApp" pc="268440765" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="99" parent="globals/TmptApp" pc="268440776" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="55" lineNum="100" parent="globals/TmptApp" pc="268440785" symbol="checkTimeAlert"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="104" parent="globals/TmptApp" pc="268440863" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="105" parent="globals/TmptApp" pc="268440865" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="106" parent="globals/TmptApp" pc="268440874" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="106" parent="globals/TmptApp" pc="268440888" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="107" parent="globals/TmptApp" pc="268440903" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="108" parent="globals/TmptApp" pc="268440915" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="110" parent="globals/TmptApp" pc="268440926" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="111" parent="globals/TmptApp" pc="268440938" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="112" parent="globals/TmptApp" pc="268440952" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="56" lineNum="113" parent="globals/TmptApp" pc="268440968" symbol="finishDay"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="57" lineNum="17" parent="globals/TmptApp" pc="268440980" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="57" lineNum="18" parent="globals/TmptApp" pc="268440982" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="57" lineNum="19" parent="globals/TmptApp" pc="268440994" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="57" lineNum="20" parent="globals/TmptApp" pc="268441019" symbol="initialize"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="58" lineNum="30" parent="globals/TmptApp" pc="268441049" symbol="onStop"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="58" lineNum="31" parent="globals/TmptApp" pc="268441051" symbol="onStop"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="58" lineNum="32" parent="globals/TmptApp" pc="268441063" symbol="onStop"/>
+<entry filename="C:\\Users\\thoma\\Documents\\GitHub\\TMPT-Garmin\\source\\TmptApp.mc" id="58" lineNum="33" parent="globals/TmptApp" pc="268441077" symbol="onStop"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="67" symbol="penalty45"/>
+<entry id="15" method="true" symbol="drawStartPage"/>
+<entry id="66" symbol="penalty20"/>
+<entry id="65" symbol="penalty15"/>
+<entry id="64" symbol="penalty5"/>
+<entry id="5" object="true" symbol="TmptAdjustmentDelegate"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="48" method="true" symbol="valueOrDefault"/>
+<entry id="29" method="true" symbol="addWaitCorrection"/>
+<entry field="true" id="60" symbol="tickTimer"/>
+<entry id="8388638" module="true" symbol="ActivityRecording"/>
+<entry id="7" object="true" symbol="TmptDelegate"/>
+<entry field="true" id="35" symbol="finishEpoch"/>
+<entry field="true" id="8388890" symbol="sport"/>
+<entry id="24" method="true" symbol="previousPage"/>
+<entry field="true" id="8392160" symbol="page"/>
+<entry id="55" method="true" symbol="onPosition"/>
+<entry id="13" method="true" symbol="drawMetric"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="47" method="true" symbol="undoLast"/>
+<entry id="19" method="true" symbol="formatSignedTime"/>
+<entry id="8392382" method="true" symbol="reset"/>
+<entry id="69" symbol="wait15"/>
+<entry field="true" id="25" symbol="app"/>
+<entry id="23" method="true" symbol="percent"/>
+<entry field="true" id="63" symbol="AppName"/>
+<entry id="40" method="true" symbol="markFinished"/>
+<entry id="70" symbol="round1"/>
+<entry id="4" module="true" symbol="globals/Rez/Strings"/>
+<entry id="20" method="true" symbol="formatTime"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="8389081" method="true" symbol="onBack"/>
+<entry id="11" method="true" symbol="drawAt"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="52" method="true" symbol="enableTracking"/>
+<entry id="72" symbol="finish"/>
+<entry field="true" id="30" symbol="averageSpeedKmh"/>
+<entry id="26" method="true" symbol="showFinishMenu"/>
+<entry id="8388883" method="true" symbol="discard"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="38" symbol="lastValue"/>
+<entry id="39" method="true" symbol="load"/>
+<entry id="18" method="true" symbol="formatShort"/>
+<entry id="12" method="true" symbol="drawCentered"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="73" symbol="cancel"/>
+<entry id="8389079" method="true" symbol="onPreviousPage"/>
+<entry id="34" method="true" symbol="elapsedSeconds"/>
+<entry field="true" id="54" symbol="lastAlertLevel"/>
+<entry id="16" method="true" symbol="drawStatsPage"/>
+<entry id="68" symbol="wait5"/>
+<entry id="6" object="true" symbol="TmptApp"/>
+<entry id="31" method="true" symbol="begin"/>
+<entry id="28" method="true" symbol="addPenaltyRound"/>
+<entry id="8388882" method="true" symbol="save"/>
+<entry field="true" id="45" symbol="startEpoch"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="51" method="true" symbol="discardDay"/>
+<entry id="50" method="true" symbol="checkTimeAlert"/>
+<entry field="true" id="33" symbol="distanceKm"/>
+<entry id="9" object="true" symbol="TmptModel"/>
+<entry id="8389619" method="true" symbol="onSelect"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="44" symbol="speedKmh"/>
+<entry field="true" id="41" symbol="penaltyRounds"/>
+<entry field="true" id="46" symbol="started"/>
+<entry id="10" object="true" symbol="TmptView"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="56" method="true" symbol="onSensor"/>
+<entry id="32" method="true" symbol="correctedSeconds"/>
+<entry field="true" id="62" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8388643" module="true" symbol="Sensor"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="8388960" symbol="heartRate"/>
+<entry id="57" method="true" symbol="onTick"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="21" symbol="model"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="8388891" symbol="subSport"/>
+<entry field="true" id="61" symbol="view"/>
+<entry id="17" method="true" symbol="drawTimePage"/>
+<entry field="true" id="8388892" symbol="name"/>
+<entry field="true" id="37" symbol="lastKind"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="27" method="true" symbol="addPenalty"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="43" method="true" symbol="remainingSeconds"/>
+<entry id="8" object="true" symbol="TmptFinishDelegate"/>
+<entry field="true" id="42" symbol="penaltySeconds"/>
+<entry id="71" symbol="undo"/>
+<entry id="8388646" module="true" object="true" symbol="Timer"/>
+<entry field="true" id="49" symbol="waitCorrectionSeconds"/>
+<entry id="8388636" module="true" symbol="Attention"/>
+<entry id="53" method="true" symbol="finishDay"/>
+<entry id="14" method="true" symbol="drawPair"/>
+<entry id="8388642" module="true" symbol="Position"/>
+<entry id="22" method="true" symbol="nextPage"/>
+<entry field="true" id="36" symbol="finished"/>
+<entry id="59" method="true" symbol="startDay"/>
+<entry field="true" id="58" symbol="session"/>
+<entry id="8389078" method="true" symbol="onNextPage"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="8389642" symbol="title"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435667" name="seconds" stackId="1" startPc="268435591"/>
+<entry endPc="268435667" name="minutes" stackId="2" startPc="268435594"/>
+<entry endPc="268435667" name="hours" stackId="3" startPc="268435594"/>
+<entry endPc="268435667" name="rest" stackId="4" startPc="268435594"/>
+<entry arg="true" endPc="268436180" name="dc" stackId="1" startPc="268435700"/>
+<entry arg="true" endPc="268436180" name="width" stackId="2" startPc="268435700"/>
+<entry arg="true" endPc="268436180" name="height" stackId="3" startPc="268435700"/>
+<entry endPc="268436179" name="remaining" stackId="4" startPc="268435703"/>
+<entry endPc="268436179" name="color" stackId="5" startPc="268435703"/>
+<entry endPc="268436179" name="firstRow" stackId="6" startPc="268435703"/>
+<entry endPc="268436179" name="rowGap" stackId="7" startPc="268435703"/>
+<entry arg="true" endPc="268436275" name="seconds" stackId="1" startPc="268436181"/>
+<entry endPc="268436275" name="value" stackId="2" startPc="268436184"/>
+<entry endPc="268436275" name="hours" stackId="3" startPc="268436184"/>
+<entry endPc="268436275" name="minutes" stackId="4" startPc="268436184"/>
+<entry endPc="268436275" name="secs" stackId="5" startPc="268436184"/>
+<entry arg="true" endPc="268436332" name="seconds" stackId="1" startPc="268436276"/>
+<entry endPc="268436332" name="prefix" stackId="2" startPc="268436279"/>
+<entry endPc="268436332" name="value" stackId="3" startPc="268436279"/>
+<entry arg="true" endPc="268436421" name="dc" stackId="1" startPc="268436333"/>
+<entry arg="true" endPc="268436421" name="width" stackId="2" startPc="268436333"/>
+<entry arg="true" endPc="268436421" name="y" stackId="3" startPc="268436333"/>
+<entry arg="true" endPc="268436421" name="label" stackId="4" startPc="268436333"/>
+<entry arg="true" endPc="268436421" name="value" stackId="5" startPc="268436333"/>
+<entry arg="true" endPc="268436421" name="color" stackId="6" startPc="268436333"/>
+<entry endPc="268436420" name="margin" stackId="7" startPc="268436336"/>
+<entry arg="true" endPc="268436432" name="value" stackId="1" startPc="268436422"/>
+<entry arg="true" endPc="268436432" name="part" stackId="2" startPc="268436422"/>
+<entry arg="true" endPc="268436469" name="dc" stackId="1" startPc="268436433"/>
+<entry arg="true" endPc="268436469" name="x" stackId="2" startPc="268436433"/>
+<entry arg="true" endPc="268436469" name="y" stackId="3" startPc="268436433"/>
+<entry arg="true" endPc="268436469" name="font" stackId="4" startPc="268436433"/>
+<entry arg="true" endPc="268436469" name="text" stackId="5" startPc="268436433"/>
+<entry arg="true" endPc="268436469" name="color" stackId="6" startPc="268436433"/>
+<entry arg="true" endPc="268436501" name="dc" stackId="1" startPc="268436470"/>
+<entry arg="true" endPc="268436501" name="y" stackId="2" startPc="268436470"/>
+<entry arg="true" endPc="268436501" name="font" stackId="3" startPc="268436470"/>
+<entry arg="true" endPc="268436501" name="text" stackId="4" startPc="268436470"/>
+<entry arg="true" endPc="268436501" name="color" stackId="5" startPc="268436470"/>
+<entry arg="true" endPc="268436641" name="dc" stackId="1" startPc="268436502"/>
+<entry arg="true" endPc="268436641" name="width" stackId="2" startPc="268436502"/>
+<entry arg="true" endPc="268436641" name="height" stackId="3" startPc="268436502"/>
+<entry arg="true" endPc="268436710" name="dc" stackId="1" startPc="268436642"/>
+<entry arg="true" endPc="268436710" name="x" stackId="2" startPc="268436642"/>
+<entry arg="true" endPc="268436710" name="labelY" stackId="3" startPc="268436642"/>
+<entry arg="true" endPc="268436710" name="valueY" stackId="4" startPc="268436642"/>
+<entry arg="true" endPc="268436710" name="unitY" stackId="5" startPc="268436642"/>
+<entry arg="true" endPc="268436710" name="label" stackId="6" startPc="268436642"/>
+<entry arg="true" endPc="268436710" name="value" stackId="7" startPc="268436642"/>
+<entry arg="true" endPc="268436710" name="unit" stackId="8" startPc="268436642"/>
+<entry arg="true" endPc="268436710" name="color" stackId="9" startPc="268436642"/>
+<entry arg="true" endPc="268436734" name="aModel" stackId="1" startPc="268436711"/>
+<entry arg="true" endPc="268437160" name="dc" stackId="1" startPc="268436735"/>
+<entry arg="true" endPc="268437160" name="width" stackId="2" startPc="268436735"/>
+<entry arg="true" endPc="268437160" name="height" stackId="3" startPc="268436735"/>
+<entry endPc="268437159" name="left" stackId="4" startPc="268436738"/>
+<entry endPc="268437159" name="right" stackId="5" startPc="268436738"/>
+<entry endPc="268437159" name="topLabel" stackId="6" startPc="268436738"/>
+<entry endPc="268437159" name="topValue" stackId="7" startPc="268436738"/>
+<entry endPc="268437159" name="topUnit" stackId="8" startPc="268436738"/>
+<entry endPc="268437159" name="bottomLabel" stackId="9" startPc="268436738"/>
+<entry endPc="268437159" name="bottomValue" stackId="10" startPc="268436738"/>
+<entry endPc="268437159" name="bottomUnit" stackId="11" startPc="268436738"/>
+<entry arg="true" endPc="268437282" name="dc" stackId="1" startPc="268437161"/>
+<entry endPc="268437281" name="width" stackId="2" startPc="268437164"/>
+<entry endPc="268437281" name="height" stackId="3" startPc="268437164"/>
+<entry arg="true" endPc="268437315" name="anApp" stackId="1" startPc="268437283"/>
+<entry arg="true" endPc="268437315" name="aModel" stackId="2" startPc="268437283"/>
+<entry arg="true" endPc="268437634" name="item" stackId="1" startPc="268437316"/>
+<entry endPc="268437633" name="id" stackId="2" startPc="268437319"/>
+<entry arg="true" endPc="268437658" name="anApp" stackId="1" startPc="268437635"/>
+<entry arg="true" endPc="268437738" name="item" stackId="1" startPc="268437659"/>
+<entry endPc="268437737" name="id" stackId="2" startPc="268437662"/>
+<entry endPc="268438297" name="menu" stackId="1" startPc="268437783"/>
+<entry arg="true" endPc="268438351" name="anApp" stackId="1" startPc="268438319"/>
+<entry arg="true" endPc="268438351" name="aModel" stackId="2" startPc="268438319"/>
+<entry endPc="268438566" name="menu" stackId="1" startPc="268438355"/>
+<entry endPc="268439287" name="endEpoch" stackId="1" startPc="268439196"/>
+<entry endPc="268439287" name="elapsed" stackId="2" startPc="268439196"/>
+<entry arg="true" endPc="268439512" name="seconds" stackId="1" startPc="268439470"/>
+<entry endPc="268439549" name="corrected" stackId="1" startPc="268439516"/>
+<entry arg="true" endPc="268439579" name="value" stackId="1" startPc="268439564"/>
+<entry arg="true" endPc="268439579" name="fallback" stackId="2" startPc="268439564"/>
+<entry arg="true" endPc="268439622" name="seconds" stackId="1" startPc="268439580"/>
+<entry endPc="268440289" name="info" stackId="1" startPc="268440090"/>
+<entry arg="true" endPc="268440492" name="info" stackId="1" startPc="268440452"/>
+<entry arg="true" endPc="268440680" name="state" stackId="1" startPc="268440610"/>
+<entry arg="true" endPc="268440862" name="remaining" stackId="1" startPc="268440681"/>
+<entry endPc="268440861" name="level" stackId="2" startPc="268440684"/>
+<entry arg="true" endPc="268441093" name="state" stackId="1" startPc="268441049"/>
+</localVars>
+<deviceInfo deviceVersion="3d0fb192a2cf01699aefd0f384af3f527e5885bd" partNumber="006-B4587-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/TmptView" offset="143" parentId="globals" symbolId="TmptView" type="class"/>
+<dataEntry label="globals/Rez" offset="331" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/TmptAdjustmentDelegate" offset="375" parentId="globals" symbolId="TmptAdjustmentDelegate" type="class"/>
+<dataEntry label="globals/TmptFinishDelegate" offset="446" parentId="globals" symbolId="TmptFinishDelegate" type="class"/>
+<dataEntry label="globals/TmptDelegate" offset="508" parentId="globals" symbolId="TmptDelegate" type="class"/>
+<dataEntry label="globals/TmptModel" offset="624" parentId="globals" symbolId="TmptModel" type="class"/>
+<dataEntry label="globals/TmptApp" offset="902" parentId="globals" symbolId="TmptApp" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="1090" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="1125" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="TmptView" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435491" name="&lt;init&gt;" parent="Rez" startPc="268435472">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435503" name="&lt;init&gt;" parent="TmptAdjustmentDelegate" startPc="268435492">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435515" name="&lt;init&gt;" parent="TmptFinishDelegate" startPc="268435504">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435527" name="&lt;init&gt;" parent="TmptDelegate" startPc="268435516">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="TmptModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435539" name="&lt;init&gt;" parent="TmptApp" startPc="268435528">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435590" name="previousPage" parent="TmptView" startPc="268435540">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435667" name="formatShort" parent="TmptView" startPc="268435591">
+<param id="seconds"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435699" name="nextPage" parent="TmptView" startPc="268435668">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436180" name="drawTimePage" parent="TmptView" startPc="268435700">
+<param id="dc"/>
+<param id="width"/>
+<param id="height"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436275" name="formatTime" parent="TmptView" startPc="268436181">
+<param id="seconds"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436332" name="formatSignedTime" parent="TmptView" startPc="268436276">
+<param id="seconds"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436421" name="drawPair" parent="TmptView" startPc="268436333">
+<param id="dc"/>
+<param id="width"/>
+<param id="y"/>
+<param id="label"/>
+<param id="value"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436432" name="percent" parent="TmptView" startPc="268436422">
+<param id="value"/>
+<param id="part"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436469" name="drawAt" parent="TmptView" startPc="268436433">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="font"/>
+<param id="text"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436501" name="drawCentered" parent="TmptView" startPc="268436470">
+<param id="dc"/>
+<param id="y"/>
+<param id="font"/>
+<param id="text"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436641" name="drawStartPage" parent="TmptView" startPc="268436502">
+<param id="dc"/>
+<param id="width"/>
+<param id="height"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436710" name="drawMetric" parent="TmptView" startPc="268436642">
+<param id="dc"/>
+<param id="x"/>
+<param id="labelY"/>
+<param id="valueY"/>
+<param id="unitY"/>
+<param id="label"/>
+<param id="value"/>
+<param id="unit"/>
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436734" name="initialize" parent="TmptView" startPc="268436711">
+<param id="aModel"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437160" name="drawStatsPage" parent="TmptView" startPc="268436735">
+<param id="dc"/>
+<param id="width"/>
+<param id="height"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437282" name="onUpdate" parent="TmptView" startPc="268437161">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437315" name="initialize" parent="TmptAdjustmentDelegate" startPc="268437283">
+<param id="anApp"/>
+<param id="aModel"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437634" name="onSelect" parent="TmptAdjustmentDelegate" startPc="268437316">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437658" name="initialize" parent="TmptFinishDelegate" startPc="268437635">
+<param id="anApp"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437738" name="onSelect" parent="TmptFinishDelegate" startPc="268437659">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437779" name="onBack" parent="TmptDelegate" startPc="268437739">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438297" name="onMenu" parent="TmptDelegate" startPc="268437780">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438318" name="onPreviousPage" parent="TmptDelegate" startPc="268438298">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438351" name="initialize" parent="TmptDelegate" startPc="268438319">
+<param id="anApp"/>
+<param id="aModel"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438567" name="showFinishMenu" parent="TmptDelegate" startPc="268438352">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438620" name="onSelect" parent="TmptDelegate" startPc="268438568">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438641" name="onNextPage" parent="TmptDelegate" startPc="268438621">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438851" name="save" parent="TmptModel" startPc="268438642">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438892" name="markFinished" parent="TmptModel" startPc="268438852">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439192" name="load" parent="TmptModel" startPc="268438893">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439287" name="elapsedSeconds" parent="TmptModel" startPc="268439193">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439469" name="undoLast" parent="TmptModel" startPc="268439288">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439512" name="addPenalty" parent="TmptModel" startPc="268439470">
+<param id="seconds"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439549" name="correctedSeconds" parent="TmptModel" startPc="268439513">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439563" name="remainingSeconds" parent="TmptModel" startPc="268439550">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439579" name="valueOrDefault" parent="TmptModel" startPc="268439564">
+<param id="value"/>
+<param id="fallback"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439622" name="addWaitCorrection" parent="TmptModel" startPc="268439580">
+<param id="seconds"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439665" name="addPenaltyRound" parent="TmptModel" startPc="268439623">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439779" name="reset" parent="TmptModel" startPc="268439666">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439789" name="initialize" parent="TmptModel" startPc="268439780">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439886" name="begin" parent="TmptModel" startPc="268439790">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440059" name="enableTracking" parent="TmptApp" startPc="268439887">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440304" name="onTick" parent="TmptApp" startPc="268440060">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440307" name="onPosition" parent="TmptApp" startPc="268440305">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440379" name="startDay" parent="TmptApp" startPc="268440308">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440451" name="getInitialView" parent="TmptApp" startPc="268440380">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440492" name="onSensor" parent="TmptApp" startPc="268440452">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440609" name="discardDay" parent="TmptApp" startPc="268440493">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440680" name="onStart" parent="TmptApp" startPc="268440610">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440862" name="checkTimeAlert" parent="TmptApp" startPc="268440681">
+<param id="remaining"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440979" name="finishDay" parent="TmptApp" startPc="268440863">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441048" name="initialize" parent="TmptApp" startPc="268440980">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441093" name="onStop" parent="TmptApp" startPc="268441049">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

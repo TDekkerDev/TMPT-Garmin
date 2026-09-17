@@ -1,0 +1,1363 @@
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Graphics,1,13,21]; ]
+using Toybox.Graphics;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 4; @symbol_classdef = [TmptView,4,6,14]; @symbol_extends<0> = [WatchUi,4,23,30]; @symbol_extends<1> = [View,4,31,35]; ]
+class TmptView extends WatchUi.View {
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 5; @position = 8; @symbol_vardef = [model,5,8,13]; ]
+    var model;
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 6; @position = 8; @symbol_vardef = [page,6,8,12]; ]
+    var page = 0;
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; @symbol_param<0> = [aModel,8,24,30]; ]
+    function initialize(aModel) as Void {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_8_32_11_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 9 8 ]
+        symbol [ View %tmp.2 9 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 9 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 10 8 ]
+        %tmp.4 = lgetv %aModel;
+        symbol [ aModel %tmp.4 10 16 22 ];
+        symbol [ model ? 10 8 13 ];
+        putv self :model %tmp.4;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_8_32_11_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 13; @symbol_functiondef = [nextPage,13,13,21]; ]
+    function nextPage() {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_13_24_16_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 14 8 ]
+        symbol [ page %tmp.2 14 16 20 ];
+        %tmp.2 = getv ? :page;
+        %tmp.3 = 1;
+        %tmp.4 = add %tmp.2 %tmp.3;
+        %tmp.5 = 2;
+        %tmp.6 = mod %tmp.4 %tmp.5;
+        symbol [ page ? 14 8 12 ];
+        putv self :page %tmp.6;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 15 8 ]
+        symbol [ WatchUi %tmp.7 15 8 15 ];
+        %tmp.7 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.8 15 16 29 ];
+        %tmp.8 = getv function %tmp.7 :requestUpdate;
+        invoke %tmp.7 %tmp.8();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_13_24_16_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 18; @symbol_functiondef = [previousPage,18,13,25]; ]
+    function previousPage() {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_18_28_22_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 19 8 ]
+        symbol [ page %tmp.1 19 8 12 ];
+        %tmp.1 = getv self :page;
+        %tmp.2 = 1;
+        %tmp.3 = sub %tmp.1 %tmp.2;
+        symbol [ page ? 19 8 12 ];
+        putv self :page dup %tmp.3;
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 20 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_20_8_20_34_if_stmt:
+        symbol [ page %tmp.5 20 12 16 ];
+        %tmp.5 = getv ? :page;
+        %tmp.6 = 0;
+        %tmp.7 = lt %tmp.5 %tmp.6;
+        bf %tmp.7 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_20_8_20_34_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_20_8_20_34_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_20_22_20_34_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 20 24 ]
+        %tmp.8 = 1;
+        symbol [ page ? 20 24 28 ];
+        putv self :page %tmp.8;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_20_22_20_34_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_20_8_20_34_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_20_8_20_34_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 21 8 ]
+        symbol [ WatchUi %tmp.9 21 8 15 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.10 21 16 29 ];
+        %tmp.10 = getv function %tmp.9 :requestUpdate;
+        invoke %tmp.9 %tmp.10();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_18_28_22_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 24; @symbol_functiondef = [onUpdate,24,13,21]; @symbol_param<0> = [dc,24,22,24]; ]
+    function onUpdate(dc) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_24_26_40_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 25 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_24_26_40_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_24_26_40_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 25 12 17 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 25 20 22 ];
+        symbol [ getWidth %tmp.2 25 23 31 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %width.1 %tmp.3;
+        symbol [ width %width.1 25 12 17 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 26 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_24_26_40_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_24_26_40_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 26 12 18 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 26 21 23 ];
+        symbol [ getHeight %tmp.5 26 24 33 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %height.2 %tmp.6;
+        symbol [ height %height.2 26 12 18 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 27 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 27 8 10 ];
+        symbol [ setColor %tmp.8 27 11 19 ];
+        %tmp.8 = getv function %tmp.7 :setColor;
+        symbol [ Graphics %tmp.9 27 20 28 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.10 27 29 40 ];
+        %tmp.10 = getv %tmp.9 :COLOR_WHITE;
+        symbol [ Graphics %tmp.11 27 42 50 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.12 27 51 62 ];
+        %tmp.12 = getv %tmp.11 :COLOR_BLACK;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 28 8 ]
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 28 8 10 ];
+        symbol [ clear %tmp.14 28 11 16 ];
+        %tmp.14 = getv function %tmp.13 :clear;
+        invoke %tmp.13 %tmp.14();
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 30 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_30_8_33_8_if_stmt:
+        symbol [ model %tmp.16 30 13 18 ];
+        %tmp.16 = getv ? :model;
+        symbol [ started %tmp.17 30 19 26 ];
+        %tmp.17 = getv %tmp.16 :started;
+        %tmp.18 = not %tmp.17;
+        bf %tmp.18 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_30_8_33_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_30_8_33_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_30_28_33_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 31 12 ]
+        %tmp.19 = self;
+        symbol [ drawStartPage %tmp.20 31 12 25 ];
+        %tmp.20 = getv function %tmp.19 :drawStartPage;
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 31 26 28 ];
+        %tmp.22 = lgetv %width.1;
+        symbol [ width %tmp.22 31 30 35 ];
+        %tmp.23 = lgetv %height.2;
+        symbol [ height %tmp.23 31 37 43 ];
+        invoke %tmp.19 %tmp.20(%tmp.21, %tmp.22, %tmp.23);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 32 12 ]
+        ret ?;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_30_28_33_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_30_8_33_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_30_8_33_8_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 35 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_35_8_39_8_if_stmt:
+        symbol [ page %tmp.25 35 12 16 ];
+        %tmp.25 = getv ? :page;
+        %tmp.26 = 0;
+        %tmp.27 = eq %tmp.25 %tmp.26;
+        bf %tmp.27 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_35_8_39_8_if_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_35_8_39_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_35_23_37_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 36 12 ]
+        %tmp.28 = self;
+        symbol [ drawTimePage %tmp.29 36 12 24 ];
+        %tmp.29 = getv function %tmp.28 :drawTimePage;
+        %tmp.30 = lgetv %dc;
+        symbol [ dc %tmp.30 36 25 27 ];
+        %tmp.31 = lgetv %width.1;
+        symbol [ width %tmp.31 36 29 34 ];
+        %tmp.32 = lgetv %height.2;
+        symbol [ height %tmp.32 36 36 42 ];
+        invoke %tmp.28 %tmp.29(%tmp.30, %tmp.31, %tmp.32);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_35_23_37_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_35_8_39_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_35_8_39_8_if_else_false:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_37_15_39_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 38 12 ]
+        %tmp.33 = self;
+        symbol [ drawStatsPage %tmp.34 38 12 25 ];
+        %tmp.34 = getv function %tmp.33 :drawStatsPage;
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 38 26 28 ];
+        %tmp.36 = lgetv %width.1;
+        symbol [ width %tmp.36 38 30 35 ];
+        %tmp.37 = lgetv %height.2;
+        symbol [ height %tmp.37 38 37 43 ];
+        invoke %tmp.33 %tmp.34(%tmp.35, %tmp.36, %tmp.37);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_37_15_39_8_stop:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_35_8_39_8_if_end:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_24_26_40_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 42; @symbol_functiondef = [drawStartPage,42,13,26]; @symbol_param<0> = [dc,42,27,29]; @symbol_param<1> = [width,42,31,36]; @symbol_param<2> = [height,42,38,44]; ]
+    function drawStartPage(dc, width, height) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_42_46_47_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 43 8 ]
+        %tmp.1 = self;
+        symbol [ drawCentered %tmp.2 43 8 20 ];
+        %tmp.2 = getv function %tmp.1 :drawCentered;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 43 21 23 ];
+        %tmp.4 = self;
+        symbol [ percent %tmp.5 43 25 32 ];
+        %tmp.5 = getv function %tmp.4 :percent;
+        %tmp.6 = lgetv %height;
+        symbol [ height %tmp.6 43 33 39 ];
+        %tmp.7 = 18;
+        %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.7);
+        symbol [ Graphics %tmp.9 43 46 54 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.10 43 55 65 ];
+        %tmp.10 = getv %tmp.9 :FONT_SMALL;
+        %tmp.11 = "TMPT DAG";
+        symbol [ Graphics %tmp.12 43 79 87 ];
+        %tmp.12 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.13 43 88 99 ];
+        %tmp.13 = getv %tmp.12 :COLOR_GREEN;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.8, %tmp.10, %tmp.11, %tmp.13);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 44 8 ]
+        %tmp.14 = self;
+        symbol [ drawCentered %tmp.15 44 8 20 ];
+        %tmp.15 = getv function %tmp.14 :drawCentered;
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 44 21 23 ];
+        %tmp.17 = self;
+        symbol [ percent %tmp.18 44 25 32 ];
+        %tmp.18 = getv function %tmp.17 :percent;
+        %tmp.19 = lgetv %height;
+        symbol [ height %tmp.19 44 33 39 ];
+        %tmp.20 = 34;
+        %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.19, %tmp.20);
+        symbol [ Graphics %tmp.22 44 46 54 ];
+        %tmp.22 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MILD %tmp.23 44 55 71 ];
+        %tmp.23 = getv %tmp.22 :FONT_NUMBER_MILD;
+        %tmp.24 = "10:00:00";
+        symbol [ Graphics %tmp.25 44 85 93 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.26 44 94 105 ];
+        %tmp.26 = getv %tmp.25 :COLOR_WHITE;
+        invoke %tmp.14 %tmp.15(%tmp.16, %tmp.21, %tmp.23, %tmp.24, %tmp.26);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 45 8 ]
+        %tmp.27 = self;
+        symbol [ drawCentered %tmp.28 45 8 20 ];
+        %tmp.28 = getv function %tmp.27 :drawCentered;
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 45 21 23 ];
+        %tmp.30 = self;
+        symbol [ percent %tmp.31 45 25 32 ];
+        %tmp.31 = getv function %tmp.30 :percent;
+        %tmp.32 = lgetv %height;
+        symbol [ height %tmp.32 45 33 39 ];
+        %tmp.33 = 57;
+        %tmp.34 = invoke %tmp.30 %tmp.31(%tmp.32, %tmp.33);
+        symbol [ Graphics %tmp.35 45 46 54 ];
+        %tmp.35 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.36 45 55 65 ];
+        %tmp.36 = getv %tmp.35 :FONT_XTINY;
+        %tmp.37 = "DAGLIMIET";
+        symbol [ Graphics %tmp.38 45 80 88 ];
+        %tmp.38 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.39 45 89 102 ];
+        %tmp.39 = getv %tmp.38 :COLOR_LT_GRAY;
+        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.34, %tmp.36, %tmp.37, %tmp.39);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 46 8 ]
+        %tmp.40 = self;
+        symbol [ drawCentered %tmp.41 46 8 20 ];
+        %tmp.41 = getv function %tmp.40 :drawCentered;
+        %tmp.42 = lgetv %dc;
+        symbol [ dc %tmp.42 46 21 23 ];
+        %tmp.43 = self;
+        symbol [ percent %tmp.44 46 25 32 ];
+        %tmp.44 = getv function %tmp.43 :percent;
+        %tmp.45 = lgetv %height;
+        symbol [ height %tmp.45 46 33 39 ];
+        %tmp.46 = 73;
+        %tmp.47 = invoke %tmp.43 %tmp.44(%tmp.45, %tmp.46);
+        symbol [ Graphics %tmp.48 46 46 54 ];
+        %tmp.48 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.49 46 55 65 ];
+        %tmp.49 = getv %tmp.48 :FONT_XTINY;
+        %tmp.50 = "DRUK START";
+        symbol [ Graphics %tmp.51 46 81 89 ];
+        %tmp.51 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.52 46 90 101 ];
+        %tmp.52 = getv %tmp.51 :COLOR_WHITE;
+        invoke %tmp.40 %tmp.41(%tmp.42, %tmp.47, %tmp.49, %tmp.50, %tmp.52);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_42_46_47_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 49; @symbol_functiondef = [drawTimePage,49,13,25]; @symbol_param<0> = [dc,49,26,28]; @symbol_param<1> = [width,49,30,35]; @symbol_param<2> = [height,49,37,43]; ]
+    function drawTimePage(dc, width, height) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 50 8 ]
+        %tmp.1 = self;
+        symbol [ drawCentered %tmp.2 50 8 20 ];
+        %tmp.2 = getv function %tmp.1 :drawCentered;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 50 21 23 ];
+        %tmp.4 = self;
+        symbol [ percent %tmp.5 50 25 32 ];
+        %tmp.5 = getv function %tmp.4 :percent;
+        %tmp.6 = lgetv %height;
+        symbol [ height %tmp.6 50 33 39 ];
+        %tmp.7 = 5;
+        %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.7);
+        symbol [ Graphics %tmp.9 50 45 53 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.10 50 54 64 ];
+        %tmp.10 = getv %tmp.9 :FONT_SMALL;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_begin:
+        symbol [ model %tmp.12 50 66 71 ];
+        %tmp.12 = getv ? :model;
+        symbol [ finished %tmp.13 50 72 80 ];
+        %tmp.13 = getv %tmp.12 :finished;
+        bf %tmp.13 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_true:
+        %tmp.14 = "TMPT RESULTAAT";
+        push %tmp.14;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_else_false:
+        %tmp.15 = "TMPT DAG";
+        push %tmp.15;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_end:
+        %tmp.16 = phi [%tmp.13 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_begin] [%tmp.14 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_true] [%tmp.15 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_else_false] [%tmp.16 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_end];
+        symbol [ Graphics %tmp.17 50 114 122 ];
+        %tmp.17 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.18 50 123 136 ];
+        %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.8, %tmp.10, %tmp.16, %tmp.18);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 52 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_stop" ]
+        %remaining.1 = local;
+        symbol [ remaining %remaining.1 52 12 21 ];
+        symbol [ model %tmp.20 52 24 29 ];
+        %tmp.20 = getv ? :model;
+        symbol [ remainingSeconds %tmp.21 52 30 46 ];
+        %tmp.21 = getv function %tmp.20 :remainingSeconds;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        lputv %remaining.1 %tmp.22;
+        symbol [ remaining %remaining.1 52 12 21 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 53 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_stop" ]
+        %color.2 = local;
+        symbol [ color %color.2 53 12 17 ];
+        symbol [ Graphics %tmp.23 53 20 28 ];
+        %tmp.23 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.24 53 29 40 ];
+        %tmp.24 = getv %tmp.23 :COLOR_GREEN;
+        lputv %color.2 %tmp.24;
+        symbol [ color %color.2 53 12 17 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 54 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_54_8_54_64_if_stmt:
+        %tmp.25 = lgetv %remaining.1;
+        symbol [ remaining %tmp.25 54 12 21 ];
+        %tmp.26 = 3600;
+        %tmp.27 = lte %tmp.25 %tmp.26;
+        bf %tmp.27 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_54_8_54_64_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_54_8_54_64_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_54_31_54_64_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 54 33 ]
+        symbol [ Graphics %tmp.28 54 41 49 ];
+        %tmp.28 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.29 54 50 62 ];
+        %tmp.29 = getv %tmp.28 :COLOR_YELLOW;
+        lputv %color.2 %tmp.29;
+        symbol [ color %color.2 54 33 38 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_54_31_54_64_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_54_8_54_64_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_54_8_54_64_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 55 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_55_8_55_60_if_stmt:
+        %tmp.30 = lgetv %remaining.1;
+        symbol [ remaining %tmp.30 55 12 21 ];
+        %tmp.31 = 900;
+        %tmp.32 = lte %tmp.30 %tmp.31;
+        bf %tmp.32 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_55_8_55_60_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_55_8_55_60_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_55_30_55_60_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 55 32 ]
+        symbol [ Graphics %tmp.33 55 40 48 ];
+        %tmp.33 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.34 55 49 58 ];
+        %tmp.34 = getv %tmp.33 :COLOR_RED;
+        lputv %color.2 %tmp.34;
+        symbol [ color %color.2 55 32 37 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_55_30_55_60_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_55_8_55_60_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_55_8_55_60_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 57 8 ]
+        %tmp.35 = self;
+        symbol [ drawCentered %tmp.36 57 8 20 ];
+        %tmp.36 = getv function %tmp.35 :drawCentered;
+        %tmp.37 = lgetv %dc;
+        symbol [ dc %tmp.37 57 21 23 ];
+        %tmp.38 = self;
+        symbol [ percent %tmp.39 57 25 32 ];
+        %tmp.39 = getv function %tmp.38 :percent;
+        %tmp.40 = lgetv %height;
+        symbol [ height %tmp.40 57 33 39 ];
+        %tmp.41 = 17;
+        %tmp.42 = invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41);
+        symbol [ Graphics %tmp.43 57 46 54 ];
+        %tmp.43 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.44 57 55 65 ];
+        %tmp.44 = getv %tmp.43 :FONT_XTINY;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_begin:
+        %tmp.45 = lgetv %remaining.1;
+        symbol [ remaining %tmp.45 57 67 76 ];
+        %tmp.46 = 0;
+        %tmp.47 = gte %tmp.45 %tmp.46;
+        bf %tmp.47 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_true:
+        %tmp.48 = "RESTEREND";
+        push %tmp.48;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_else_false:
+        %tmp.49 = "OVER TIJD";
+        push %tmp.49;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_end:
+        %tmp.50 = phi [%tmp.47 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_begin] [%tmp.48 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_true] [%tmp.49 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_else_false] [%tmp.50 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_57_67_57_98_end];
+        %tmp.51 = lgetv %color.2;
+        symbol [ color %tmp.51 57 111 116 ];
+        invoke %tmp.35 %tmp.36(%tmp.37, %tmp.42, %tmp.44, %tmp.50, %tmp.51);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 58 8 ]
+        %tmp.52 = self;
+        symbol [ drawCentered %tmp.53 58 8 20 ];
+        %tmp.53 = getv function %tmp.52 :drawCentered;
+        %tmp.54 = lgetv %dc;
+        symbol [ dc %tmp.54 58 21 23 ];
+        %tmp.55 = self;
+        symbol [ percent %tmp.56 58 25 32 ];
+        %tmp.56 = getv function %tmp.55 :percent;
+        %tmp.57 = lgetv %height;
+        symbol [ height %tmp.57 58 33 39 ];
+        %tmp.58 = 25;
+        %tmp.59 = invoke %tmp.55 %tmp.56(%tmp.57, %tmp.58);
+        symbol [ Graphics %tmp.60 58 46 54 ];
+        %tmp.60 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MILD %tmp.61 58 55 71 ];
+        %tmp.61 = getv %tmp.60 :FONT_NUMBER_MILD;
+        %tmp.62 = self;
+        symbol [ formatSignedTime %tmp.63 58 73 89 ];
+        %tmp.63 = getv function %tmp.62 :formatSignedTime;
+        %tmp.64 = lgetv %remaining.1;
+        symbol [ remaining %tmp.64 58 90 99 ];
+        %tmp.65 = invoke %tmp.62 %tmp.63(%tmp.64);
+        %tmp.66 = lgetv %color.2;
+        symbol [ color %tmp.66 58 102 107 ];
+        invoke %tmp.52 %tmp.53(%tmp.54, %tmp.59, %tmp.61, %tmp.65, %tmp.66);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 60 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_stop" ]
+        %firstRow.3 = local;
+        symbol [ firstRow %firstRow.3 60 12 20 ];
+        %tmp.67 = self;
+        symbol [ percent %tmp.68 60 23 30 ];
+        %tmp.68 = getv function %tmp.67 :percent;
+        %tmp.69 = lgetv %height;
+        symbol [ height %tmp.69 60 31 37 ];
+        %tmp.70 = 49;
+        %tmp.71 = invoke %tmp.67 %tmp.68(%tmp.69, %tmp.70);
+        lputv %firstRow.3 %tmp.71;
+        symbol [ firstRow %firstRow.3 60 12 20 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 61 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_stop" ]
+        %rowGap.4 = local;
+        symbol [ rowGap %rowGap.4 61 12 18 ];
+        %tmp.72 = self;
+        symbol [ percent %tmp.73 61 21 28 ];
+        %tmp.73 = getv function %tmp.72 :percent;
+        %tmp.74 = lgetv %height;
+        symbol [ height %tmp.74 61 29 35 ];
+        %tmp.75 = 8;
+        %tmp.76 = invoke %tmp.72 %tmp.73(%tmp.74, %tmp.75);
+        lputv %rowGap.4 %tmp.76;
+        symbol [ rowGap %rowGap.4 61 12 18 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 62 8 ]
+        %tmp.77 = self;
+        symbol [ drawPair %tmp.78 62 8 16 ];
+        %tmp.78 = getv function %tmp.77 :drawPair;
+        %tmp.79 = lgetv %dc;
+        symbol [ dc %tmp.79 62 17 19 ];
+        %tmp.80 = lgetv %width;
+        symbol [ width %tmp.80 62 21 26 ];
+        %tmp.81 = lgetv %firstRow.3;
+        symbol [ firstRow %tmp.81 62 28 36 ];
+        %tmp.82 = "TIJD";
+        %tmp.83 = self;
+        symbol [ formatTime %tmp.84 62 46 56 ];
+        %tmp.84 = getv function %tmp.83 :formatTime;
+        symbol [ model %tmp.86 62 57 62 ];
+        %tmp.86 = getv ? :model;
+        symbol [ elapsedSeconds %tmp.87 62 63 77 ];
+        %tmp.87 = getv function %tmp.86 :elapsedSeconds;
+        %tmp.88 = invoke %tmp.86 %tmp.87();
+        %tmp.89 = invoke %tmp.83 %tmp.84(%tmp.88);
+        symbol [ Graphics %tmp.90 62 82 90 ];
+        %tmp.90 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.91 62 91 102 ];
+        %tmp.91 = getv %tmp.90 :COLOR_WHITE;
+        invoke %tmp.77 %tmp.78(%tmp.79, %tmp.80, %tmp.81, %tmp.82, %tmp.89, %tmp.91);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 63 8 ]
+        %tmp.92 = self;
+        symbol [ drawPair %tmp.93 63 8 16 ];
+        %tmp.93 = getv function %tmp.92 :drawPair;
+        %tmp.94 = lgetv %dc;
+        symbol [ dc %tmp.94 63 17 19 ];
+        %tmp.95 = lgetv %width;
+        symbol [ width %tmp.95 63 21 26 ];
+        %tmp.96 = lgetv %firstRow.3;
+        symbol [ firstRow %tmp.96 63 28 36 ];
+        %tmp.97 = lgetv %rowGap.4;
+        symbol [ rowGap %tmp.97 63 39 45 ];
+        %tmp.98 = add %tmp.96 %tmp.97;
+        %tmp.99 = "STRAF";
+        %tmp.100 = "+";
+        %tmp.101 = self;
+        symbol [ formatShort %tmp.102 63 62 73 ];
+        %tmp.102 = getv function %tmp.101 :formatShort;
+        symbol [ model %tmp.104 63 74 79 ];
+        %tmp.104 = getv ? :model;
+        symbol [ penaltySeconds %tmp.105 63 80 94 ];
+        %tmp.105 = getv %tmp.104 :penaltySeconds;
+        %tmp.106 = invoke %tmp.101 %tmp.102(%tmp.105);
+        %tmp.107 = add %tmp.100 %tmp.106;
+        symbol [ Graphics %tmp.108 63 97 105 ];
+        %tmp.108 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.109 63 106 115 ];
+        %tmp.109 = getv %tmp.108 :COLOR_RED;
+        invoke %tmp.92 %tmp.93(%tmp.94, %tmp.95, %tmp.98, %tmp.99, %tmp.107, %tmp.109);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 64 8 ]
+        %tmp.110 = self;
+        symbol [ drawPair %tmp.111 64 8 16 ];
+        %tmp.111 = getv function %tmp.110 :drawPair;
+        %tmp.112 = lgetv %dc;
+        symbol [ dc %tmp.112 64 17 19 ];
+        %tmp.113 = lgetv %width;
+        symbol [ width %tmp.113 64 21 26 ];
+        %tmp.114 = lgetv %firstRow.3;
+        symbol [ firstRow %tmp.114 64 28 36 ];
+        %tmp.115 = lgetv %rowGap.4;
+        symbol [ rowGap %tmp.115 64 40 46 ];
+        %tmp.116 = 2;
+        %tmp.117 = mul %tmp.115 %tmp.116;
+        %tmp.118 = add %tmp.114 %tmp.117;
+        %tmp.119 = "CORRECTIE";
+        %tmp.120 = "-";
+        %tmp.121 = self;
+        symbol [ formatShort %tmp.122 64 72 83 ];
+        %tmp.122 = getv function %tmp.121 :formatShort;
+        symbol [ model %tmp.124 64 84 89 ];
+        %tmp.124 = getv ? :model;
+        symbol [ waitCorrectionSeconds %tmp.125 64 90 111 ];
+        %tmp.125 = getv %tmp.124 :waitCorrectionSeconds;
+        %tmp.126 = invoke %tmp.121 %tmp.122(%tmp.125);
+        %tmp.127 = add %tmp.120 %tmp.126;
+        symbol [ Graphics %tmp.128 64 114 122 ];
+        %tmp.128 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.129 64 123 133 ];
+        %tmp.129 = getv %tmp.128 :COLOR_BLUE;
+        invoke %tmp.110 %tmp.111(%tmp.112, %tmp.113, %tmp.118, %tmp.119, %tmp.127, %tmp.129);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 65 8 ]
+        %tmp.130 = self;
+        symbol [ drawPair %tmp.131 65 8 16 ];
+        %tmp.131 = getv function %tmp.130 :drawPair;
+        %tmp.132 = lgetv %dc;
+        symbol [ dc %tmp.132 65 17 19 ];
+        %tmp.133 = lgetv %width;
+        symbol [ width %tmp.133 65 21 26 ];
+        %tmp.134 = lgetv %firstRow.3;
+        symbol [ firstRow %tmp.134 65 28 36 ];
+        %tmp.135 = lgetv %rowGap.4;
+        symbol [ rowGap %tmp.135 65 40 46 ];
+        %tmp.136 = 3;
+        %tmp.137 = mul %tmp.135 %tmp.136;
+        %tmp.138 = add %tmp.134 %tmp.137;
+        %tmp.139 = "RONDES";
+        symbol [ model %tmp.141 65 63 68 ];
+        %tmp.141 = getv ? :model;
+        symbol [ penaltyRounds %tmp.142 65 69 82 ];
+        %tmp.142 = getv %tmp.141 :penaltyRounds;
+        symbol [ toString %tmp.143 65 83 91 ];
+        %tmp.143 = getv function %tmp.142 :toString;
+        %tmp.144 = invoke %tmp.142 %tmp.143();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_begin:
+        symbol [ model %tmp.146 65 95 100 ];
+        %tmp.146 = getv ? :model;
+        symbol [ penaltyRounds %tmp.147 65 101 114 ];
+        %tmp.147 = getv %tmp.146 :penaltyRounds;
+        %tmp.148 = 0;
+        %tmp.149 = gt %tmp.147 %tmp.148;
+        bf %tmp.149 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_true:
+        symbol [ Graphics %tmp.150 65 121 129 ];
+        %tmp.150 = getm $.Toybox.Graphics;
+        symbol [ COLOR_YELLOW %tmp.151 65 130 142 ];
+        %tmp.151 = getv %tmp.150 :COLOR_YELLOW;
+        push %tmp.151;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_else_false:
+        symbol [ Graphics %tmp.152 65 145 153 ];
+        %tmp.152 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.153 65 154 165 ];
+        %tmp.153 = getv %tmp.152 :COLOR_WHITE;
+        push %tmp.153;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_end:
+        %tmp.154 = phi [%tmp.149 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_begin] [%tmp.151 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_true] [%tmp.153 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_else_false] [%tmp.154 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_65_95_65_154_end];
+        invoke %tmp.130 %tmp.131(%tmp.132, %tmp.133, %tmp.138, %tmp.139, %tmp.144, %tmp.154);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 67 8 ]
+        %tmp.155 = self;
+        symbol [ drawCentered %tmp.156 67 8 20 ];
+        %tmp.156 = getv function %tmp.155 :drawCentered;
+        %tmp.157 = lgetv %dc;
+        symbol [ dc %tmp.157 67 21 23 ];
+        %tmp.158 = self;
+        symbol [ percent %tmp.159 67 25 32 ];
+        %tmp.159 = getv function %tmp.158 :percent;
+        %tmp.160 = lgetv %height;
+        symbol [ height %tmp.160 67 33 39 ];
+        %tmp.161 = 88;
+        %tmp.162 = invoke %tmp.158 %tmp.159(%tmp.160, %tmp.161);
+        symbol [ Graphics %tmp.163 67 46 54 ];
+        %tmp.163 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.164 67 55 65 ];
+        %tmp.164 = getv %tmp.163 :FONT_XTINY;
+        %tmp.165 = "1 / 2";
+        symbol [ Graphics %tmp.166 67 76 84 ];
+        %tmp.166 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.167 67 85 98 ];
+        %tmp.167 = getv %tmp.166 :COLOR_DK_GRAY;
+        invoke %tmp.155 %tmp.156(%tmp.157, %tmp.162, %tmp.164, %tmp.165, %tmp.167);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_49_45_68_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 70; @symbol_functiondef = [drawStatsPage,70,13,26]; @symbol_param<0> = [dc,70,27,29]; @symbol_param<1> = [width,70,31,36]; @symbol_param<2> = [height,70,38,44]; ]
+    function drawStatsPage(dc, width, height) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 71 8 ]
+        %tmp.1 = self;
+        symbol [ drawCentered %tmp.2 71 8 20 ];
+        %tmp.2 = getv function %tmp.1 :drawCentered;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 71 21 23 ];
+        %tmp.4 = self;
+        symbol [ percent %tmp.5 71 25 32 ];
+        %tmp.5 = getv function %tmp.4 :percent;
+        %tmp.6 = lgetv %height;
+        symbol [ height %tmp.6 71 33 39 ];
+        %tmp.7 = 6;
+        %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.7);
+        symbol [ Graphics %tmp.9 71 45 53 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.10 71 54 64 ];
+        %tmp.10 = getv %tmp.9 :FONT_SMALL;
+        %tmp.11 = "LIVE GEGEVENS";
+        symbol [ Graphics %tmp.12 71 83 91 ];
+        %tmp.12 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.13 71 92 105 ];
+        %tmp.13 = getv %tmp.12 :COLOR_LT_GRAY;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.8, %tmp.10, %tmp.11, %tmp.13);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 73 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_stop" ]
+        %left.1 = local;
+        symbol [ left %left.1 73 12 16 ];
+        %tmp.14 = self;
+        symbol [ percent %tmp.15 73 19 26 ];
+        %tmp.15 = getv function %tmp.14 :percent;
+        %tmp.16 = lgetv %width;
+        symbol [ width %tmp.16 73 27 32 ];
+        %tmp.17 = 31;
+        %tmp.18 = invoke %tmp.14 %tmp.15(%tmp.16, %tmp.17);
+        lputv %left.1 %tmp.18;
+        symbol [ left %left.1 73 12 16 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 74 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_stop" ]
+        %right.2 = local;
+        symbol [ right %right.2 74 12 17 ];
+        %tmp.19 = self;
+        symbol [ percent %tmp.20 74 20 27 ];
+        %tmp.20 = getv function %tmp.19 :percent;
+        %tmp.21 = lgetv %width;
+        symbol [ width %tmp.21 74 28 33 ];
+        %tmp.22 = 69;
+        %tmp.23 = invoke %tmp.19 %tmp.20(%tmp.21, %tmp.22);
+        lputv %right.2 %tmp.23;
+        symbol [ right %right.2 74 12 17 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 75 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_stop" ]
+        %topLabel.3 = local;
+        symbol [ topLabel %topLabel.3 75 12 20 ];
+        %tmp.24 = self;
+        symbol [ percent %tmp.25 75 23 30 ];
+        %tmp.25 = getv function %tmp.24 :percent;
+        %tmp.26 = lgetv %height;
+        symbol [ height %tmp.26 75 31 37 ];
+        %tmp.27 = 23;
+        %tmp.28 = invoke %tmp.24 %tmp.25(%tmp.26, %tmp.27);
+        lputv %topLabel.3 %tmp.28;
+        symbol [ topLabel %topLabel.3 75 12 20 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 76 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_stop" ]
+        %topValue.4 = local;
+        symbol [ topValue %topValue.4 76 12 20 ];
+        %tmp.29 = self;
+        symbol [ percent %tmp.30 76 23 30 ];
+        %tmp.30 = getv function %tmp.29 :percent;
+        %tmp.31 = lgetv %height;
+        symbol [ height %tmp.31 76 31 37 ];
+        %tmp.32 = 31;
+        %tmp.33 = invoke %tmp.29 %tmp.30(%tmp.31, %tmp.32);
+        lputv %topValue.4 %tmp.33;
+        symbol [ topValue %topValue.4 76 12 20 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 77 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_stop" ]
+        %topUnit.5 = local;
+        symbol [ topUnit %topUnit.5 77 12 19 ];
+        %tmp.34 = self;
+        symbol [ percent %tmp.35 77 22 29 ];
+        %tmp.35 = getv function %tmp.34 :percent;
+        %tmp.36 = lgetv %height;
+        symbol [ height %tmp.36 77 30 36 ];
+        %tmp.37 = 43;
+        %tmp.38 = invoke %tmp.34 %tmp.35(%tmp.36, %tmp.37);
+        lputv %topUnit.5 %tmp.38;
+        symbol [ topUnit %topUnit.5 77 12 19 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 78 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_stop" ]
+        %bottomLabel.6 = local;
+        symbol [ bottomLabel %bottomLabel.6 78 12 23 ];
+        %tmp.39 = self;
+        symbol [ percent %tmp.40 78 26 33 ];
+        %tmp.40 = getv function %tmp.39 :percent;
+        %tmp.41 = lgetv %height;
+        symbol [ height %tmp.41 78 34 40 ];
+        %tmp.42 = 55;
+        %tmp.43 = invoke %tmp.39 %tmp.40(%tmp.41, %tmp.42);
+        lputv %bottomLabel.6 %tmp.43;
+        symbol [ bottomLabel %bottomLabel.6 78 12 23 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 79 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_stop" ]
+        %bottomValue.7 = local;
+        symbol [ bottomValue %bottomValue.7 79 12 23 ];
+        %tmp.44 = self;
+        symbol [ percent %tmp.45 79 26 33 ];
+        %tmp.45 = getv function %tmp.44 :percent;
+        %tmp.46 = lgetv %height;
+        symbol [ height %tmp.46 79 34 40 ];
+        %tmp.47 = 63;
+        %tmp.48 = invoke %tmp.44 %tmp.45(%tmp.46, %tmp.47);
+        lputv %bottomValue.7 %tmp.48;
+        symbol [ bottomValue %bottomValue.7 79 12 23 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 80 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_stop" ]
+        %bottomUnit.8 = local;
+        symbol [ bottomUnit %bottomUnit.8 80 12 22 ];
+        %tmp.49 = self;
+        symbol [ percent %tmp.50 80 25 32 ];
+        %tmp.50 = getv function %tmp.49 :percent;
+        %tmp.51 = lgetv %height;
+        symbol [ height %tmp.51 80 33 39 ];
+        %tmp.52 = 75;
+        %tmp.53 = invoke %tmp.49 %tmp.50(%tmp.51, %tmp.52);
+        lputv %bottomUnit.8 %tmp.53;
+        symbol [ bottomUnit %bottomUnit.8 80 12 22 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 82 8 ]
+        %tmp.54 = self;
+        symbol [ drawMetric %tmp.55 82 8 18 ];
+        %tmp.55 = getv function %tmp.54 :drawMetric;
+        %tmp.56 = lgetv %dc;
+        symbol [ dc %tmp.56 82 19 21 ];
+        %tmp.57 = lgetv %left.1;
+        symbol [ left %tmp.57 82 23 27 ];
+        %tmp.58 = lgetv %topLabel.3;
+        symbol [ topLabel %tmp.58 82 29 37 ];
+        %tmp.59 = lgetv %topValue.4;
+        symbol [ topValue %tmp.59 82 39 47 ];
+        %tmp.60 = lgetv %topUnit.5;
+        symbol [ topUnit %tmp.60 82 49 56 ];
+        %tmp.61 = "HARTSLAG";
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_begin:
+        symbol [ model %tmp.63 82 70 75 ];
+        %tmp.63 = getv ? :model;
+        symbol [ heartRate %tmp.64 82 76 85 ];
+        %tmp.64 = getv %tmp.63 :heartRate;
+        %tmp.65 = 0;
+        %tmp.66 = gt %tmp.64 %tmp.65;
+        bf %tmp.66 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_true:
+        symbol [ model %tmp.68 82 92 97 ];
+        %tmp.68 = getv ? :model;
+        symbol [ heartRate %tmp.69 82 98 107 ];
+        %tmp.69 = getv %tmp.68 :heartRate;
+        symbol [ toString %tmp.70 82 108 116 ];
+        %tmp.70 = getv function %tmp.69 :toString;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        push %tmp.71;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_else_false:
+        %tmp.72 = "--";
+        push %tmp.72;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_end:
+        %tmp.73 = phi [%tmp.66 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_begin] [%tmp.71 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_true] [%tmp.72 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_else_false] [%tmp.73 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_82_70_82_121_end];
+        %tmp.74 = "BPM";
+        symbol [ Graphics %tmp.75 82 134 142 ];
+        %tmp.75 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.76 82 143 152 ];
+        %tmp.76 = getv %tmp.75 :COLOR_RED;
+        invoke %tmp.54 %tmp.55(%tmp.56, %tmp.57, %tmp.58, %tmp.59, %tmp.60, %tmp.61, %tmp.73, %tmp.74, %tmp.76);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 83 8 ]
+        %tmp.77 = self;
+        symbol [ drawMetric %tmp.78 83 8 18 ];
+        %tmp.78 = getv function %tmp.77 :drawMetric;
+        %tmp.79 = lgetv %dc;
+        symbol [ dc %tmp.79 83 19 21 ];
+        %tmp.80 = lgetv %right.2;
+        symbol [ right %tmp.80 83 23 28 ];
+        %tmp.81 = lgetv %topLabel.3;
+        symbol [ topLabel %tmp.81 83 30 38 ];
+        %tmp.82 = lgetv %topValue.4;
+        symbol [ topValue %tmp.82 83 40 48 ];
+        %tmp.83 = lgetv %topUnit.5;
+        symbol [ topUnit %tmp.83 83 50 57 ];
+        %tmp.84 = "SNELHEID";
+        symbol [ model %tmp.86 83 71 76 ];
+        %tmp.86 = getv ? :model;
+        symbol [ speedKmh %tmp.87 83 77 85 ];
+        %tmp.87 = getv %tmp.86 :speedKmh;
+        symbol [ format %tmp.88 83 86 92 ];
+        %tmp.88 = getv function %tmp.87 :format;
+        %tmp.89 = "%.1f";
+        %tmp.90 = invoke %tmp.87 %tmp.88(%tmp.89);
+        %tmp.91 = "KM/U";
+        symbol [ Graphics %tmp.92 83 110 118 ];
+        %tmp.92 = getm $.Toybox.Graphics;
+        symbol [ COLOR_GREEN %tmp.93 83 119 130 ];
+        %tmp.93 = getv %tmp.92 :COLOR_GREEN;
+        invoke %tmp.77 %tmp.78(%tmp.79, %tmp.80, %tmp.81, %tmp.82, %tmp.83, %tmp.84, %tmp.90, %tmp.91, %tmp.93);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 84 8 ]
+        %tmp.94 = self;
+        symbol [ drawMetric %tmp.95 84 8 18 ];
+        %tmp.95 = getv function %tmp.94 :drawMetric;
+        %tmp.96 = lgetv %dc;
+        symbol [ dc %tmp.96 84 19 21 ];
+        %tmp.97 = lgetv %left.1;
+        symbol [ left %tmp.97 84 23 27 ];
+        %tmp.98 = lgetv %bottomLabel.6;
+        symbol [ bottomLabel %tmp.98 84 29 40 ];
+        %tmp.99 = lgetv %bottomValue.7;
+        symbol [ bottomValue %tmp.99 84 42 53 ];
+        %tmp.100 = lgetv %bottomUnit.8;
+        symbol [ bottomUnit %tmp.100 84 55 65 ];
+        %tmp.101 = "AFSTAND";
+        symbol [ model %tmp.103 84 78 83 ];
+        %tmp.103 = getv ? :model;
+        symbol [ distanceKm %tmp.104 84 84 94 ];
+        %tmp.104 = getv %tmp.103 :distanceKm;
+        symbol [ format %tmp.105 84 95 101 ];
+        %tmp.105 = getv function %tmp.104 :format;
+        %tmp.106 = "%.2f";
+        %tmp.107 = invoke %tmp.104 %tmp.105(%tmp.106);
+        %tmp.108 = "KM";
+        symbol [ Graphics %tmp.109 84 117 125 ];
+        %tmp.109 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.110 84 126 137 ];
+        %tmp.110 = getv %tmp.109 :COLOR_WHITE;
+        invoke %tmp.94 %tmp.95(%tmp.96, %tmp.97, %tmp.98, %tmp.99, %tmp.100, %tmp.101, %tmp.107, %tmp.108, %tmp.110);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 85 8 ]
+        %tmp.111 = self;
+        symbol [ drawMetric %tmp.112 85 8 18 ];
+        %tmp.112 = getv function %tmp.111 :drawMetric;
+        %tmp.113 = lgetv %dc;
+        symbol [ dc %tmp.113 85 19 21 ];
+        %tmp.114 = lgetv %right.2;
+        symbol [ right %tmp.114 85 23 28 ];
+        %tmp.115 = lgetv %bottomLabel.6;
+        symbol [ bottomLabel %tmp.115 85 30 41 ];
+        %tmp.116 = lgetv %bottomValue.7;
+        symbol [ bottomValue %tmp.116 85 43 54 ];
+        %tmp.117 = lgetv %bottomUnit.8;
+        symbol [ bottomUnit %tmp.117 85 56 66 ];
+        %tmp.118 = "GEMIDDELD";
+        symbol [ model %tmp.120 85 81 86 ];
+        %tmp.120 = getv ? :model;
+        symbol [ averageSpeedKmh %tmp.121 85 87 102 ];
+        %tmp.121 = getv %tmp.120 :averageSpeedKmh;
+        symbol [ format %tmp.122 85 103 109 ];
+        %tmp.122 = getv function %tmp.121 :format;
+        %tmp.123 = "%.1f";
+        %tmp.124 = invoke %tmp.121 %tmp.122(%tmp.123);
+        %tmp.125 = "KM/U";
+        symbol [ Graphics %tmp.126 85 127 135 ];
+        %tmp.126 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.127 85 136 146 ];
+        %tmp.127 = getv %tmp.126 :COLOR_BLUE;
+        invoke %tmp.111 %tmp.112(%tmp.113, %tmp.114, %tmp.115, %tmp.116, %tmp.117, %tmp.118, %tmp.124, %tmp.125, %tmp.127);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 87 8 ]
+        %tmp.128 = self;
+        symbol [ drawCentered %tmp.129 87 8 20 ];
+        %tmp.129 = getv function %tmp.128 :drawCentered;
+        %tmp.130 = lgetv %dc;
+        symbol [ dc %tmp.130 87 21 23 ];
+        %tmp.131 = self;
+        symbol [ percent %tmp.132 87 25 32 ];
+        %tmp.132 = getv function %tmp.131 :percent;
+        %tmp.133 = lgetv %height;
+        symbol [ height %tmp.133 87 33 39 ];
+        %tmp.134 = 88;
+        %tmp.135 = invoke %tmp.131 %tmp.132(%tmp.133, %tmp.134);
+        symbol [ Graphics %tmp.136 87 46 54 ];
+        %tmp.136 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.137 87 55 65 ];
+        %tmp.137 = getv %tmp.136 :FONT_XTINY;
+        %tmp.138 = "2 / 2";
+        symbol [ Graphics %tmp.139 87 76 84 ];
+        %tmp.139 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.140 87 85 98 ];
+        %tmp.140 = getv %tmp.139 :COLOR_DK_GRAY;
+        invoke %tmp.128 %tmp.129(%tmp.130, %tmp.135, %tmp.137, %tmp.138, %tmp.140);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_70_46_88_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 90; @symbol_functiondef = [drawMetric,90,13,23]; @symbol_param<0> = [dc,90,24,26]; @symbol_param<1> = [x,90,28,29]; @symbol_param<2> = [labelY,90,31,37]; @symbol_param<3> = [valueY,90,39,45]; @symbol_param<4> = [unitY,90,47,52]; @symbol_param<5> = [label,90,54,59]; @symbol_param<6> = [value,90,61,66]; @symbol_param<7> = [unit,90,68,72]; @symbol_param<8> = [color,90,74,79]; ]
+    function drawMetric(dc, x, labelY, valueY, unitY, label, value, unit, color) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_90_81_94_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 91 8 ]
+        %tmp.1 = self;
+        symbol [ drawAt %tmp.2 91 8 14 ];
+        %tmp.2 = getv function %tmp.1 :drawAt;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 91 15 17 ];
+        %tmp.4 = lgetv %x;
+        symbol [ x %tmp.4 91 19 20 ];
+        %tmp.5 = lgetv %labelY;
+        symbol [ labelY %tmp.5 91 22 28 ];
+        symbol [ Graphics %tmp.6 91 30 38 ];
+        %tmp.6 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.7 91 39 49 ];
+        %tmp.7 = getv %tmp.6 :FONT_XTINY;
+        %tmp.8 = lgetv %label;
+        symbol [ label %tmp.8 91 51 56 ];
+        symbol [ Graphics %tmp.9 91 58 66 ];
+        %tmp.9 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.10 91 67 80 ];
+        %tmp.10 = getv %tmp.9 :COLOR_LT_GRAY;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5, %tmp.7, %tmp.8, %tmp.10);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 92 8 ]
+        %tmp.11 = self;
+        symbol [ drawAt %tmp.12 92 8 14 ];
+        %tmp.12 = getv function %tmp.11 :drawAt;
+        %tmp.13 = lgetv %dc;
+        symbol [ dc %tmp.13 92 15 17 ];
+        %tmp.14 = lgetv %x;
+        symbol [ x %tmp.14 92 19 20 ];
+        %tmp.15 = lgetv %valueY;
+        symbol [ valueY %tmp.15 92 22 28 ];
+        symbol [ Graphics %tmp.16 92 30 38 ];
+        %tmp.16 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.17 92 39 49 ];
+        %tmp.17 = getv %tmp.16 :FONT_SMALL;
+        %tmp.18 = lgetv %value;
+        symbol [ value %tmp.18 92 51 56 ];
+        %tmp.19 = lgetv %color;
+        symbol [ color %tmp.19 92 58 63 ];
+        invoke %tmp.11 %tmp.12(%tmp.13, %tmp.14, %tmp.15, %tmp.17, %tmp.18, %tmp.19);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 93 8 ]
+        %tmp.20 = self;
+        symbol [ drawAt %tmp.21 93 8 14 ];
+        %tmp.21 = getv function %tmp.20 :drawAt;
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 93 15 17 ];
+        %tmp.23 = lgetv %x;
+        symbol [ x %tmp.23 93 19 20 ];
+        %tmp.24 = lgetv %unitY;
+        symbol [ unitY %tmp.24 93 22 27 ];
+        symbol [ Graphics %tmp.25 93 29 37 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.26 93 38 48 ];
+        %tmp.26 = getv %tmp.25 :FONT_XTINY;
+        %tmp.27 = lgetv %unit;
+        symbol [ unit %tmp.27 93 50 54 ];
+        symbol [ Graphics %tmp.28 93 56 64 ];
+        %tmp.28 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.29 93 65 78 ];
+        %tmp.29 = getv %tmp.28 :COLOR_DK_GRAY;
+        invoke %tmp.20 %tmp.21(%tmp.22, %tmp.23, %tmp.24, %tmp.26, %tmp.27, %tmp.29);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_90_81_94_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 96; @symbol_functiondef = [drawPair,96,13,21]; @symbol_param<0> = [dc,96,22,24]; @symbol_param<1> = [width,96,26,31]; @symbol_param<2> = [y,96,33,34]; @symbol_param<3> = [label,96,36,41]; @symbol_param<4> = [value,96,43,48]; @symbol_param<5> = [color,96,50,55]; ]
+    function drawPair(dc, width, y, label, value, color) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_96_57_102_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 97 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_96_57_102_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_96_57_102_4_stop" ]
+        %margin.1 = local;
+        symbol [ margin %margin.1 97 12 18 ];
+        %tmp.1 = self;
+        symbol [ percent %tmp.2 97 21 28 ];
+        %tmp.2 = getv function %tmp.1 :percent;
+        %tmp.3 = lgetv %width;
+        symbol [ width %tmp.3 97 29 34 ];
+        %tmp.4 = 18;
+        %tmp.5 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4);
+        lputv %margin.1 %tmp.5;
+        symbol [ margin %margin.1 97 12 18 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 98 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 98 8 10 ];
+        symbol [ setColor %tmp.7 98 11 19 ];
+        %tmp.7 = getv function %tmp.6 :setColor;
+        symbol [ Graphics %tmp.8 98 20 28 ];
+        %tmp.8 = getm $.Toybox.Graphics;
+        symbol [ COLOR_LT_GRAY %tmp.9 98 29 42 ];
+        %tmp.9 = getv %tmp.8 :COLOR_LT_GRAY;
+        symbol [ Graphics %tmp.10 98 44 52 ];
+        %tmp.10 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.11 98 53 70 ];
+        %tmp.11 = getv %tmp.10 :COLOR_TRANSPARENT;
+        invoke %tmp.6 %tmp.7(%tmp.9, %tmp.11);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 99 8 ]
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 99 8 10 ];
+        symbol [ drawText %tmp.13 99 11 19 ];
+        %tmp.13 = getv function %tmp.12 :drawText;
+        %tmp.14 = lgetv %margin.1;
+        symbol [ margin %tmp.14 99 20 26 ];
+        %tmp.15 = lgetv %y;
+        symbol [ y %tmp.15 99 28 29 ];
+        symbol [ Graphics %tmp.16 99 31 39 ];
+        %tmp.16 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.17 99 40 50 ];
+        %tmp.17 = getv %tmp.16 :FONT_XTINY;
+        %tmp.18 = lgetv %label;
+        symbol [ label %tmp.18 99 52 57 ];
+        symbol [ Graphics %tmp.19 99 59 67 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.20 99 68 85 ];
+        %tmp.20 = getv %tmp.19 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.12 %tmp.13(%tmp.14, %tmp.15, %tmp.17, %tmp.18, %tmp.20);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 100 8 ]
+        %tmp.21 = lgetv %dc;
+        symbol [ dc %tmp.21 100 8 10 ];
+        symbol [ setColor %tmp.22 100 11 19 ];
+        %tmp.22 = getv function %tmp.21 :setColor;
+        %tmp.23 = lgetv %color;
+        symbol [ color %tmp.23 100 20 25 ];
+        symbol [ Graphics %tmp.24 100 27 35 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.25 100 36 53 ];
+        %tmp.25 = getv %tmp.24 :COLOR_TRANSPARENT;
+        invoke %tmp.21 %tmp.22(%tmp.23, %tmp.25);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 101 8 ]
+        %tmp.26 = lgetv %dc;
+        symbol [ dc %tmp.26 101 8 10 ];
+        symbol [ drawText %tmp.27 101 11 19 ];
+        %tmp.27 = getv function %tmp.26 :drawText;
+        %tmp.28 = lgetv %width;
+        symbol [ width %tmp.28 101 20 25 ];
+        %tmp.29 = lgetv %margin.1;
+        symbol [ margin %tmp.29 101 28 34 ];
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        %tmp.31 = lgetv %y;
+        symbol [ y %tmp.31 101 36 37 ];
+        symbol [ Graphics %tmp.32 101 39 47 ];
+        %tmp.32 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.33 101 48 58 ];
+        %tmp.33 = getv %tmp.32 :FONT_XTINY;
+        %tmp.34 = lgetv %value;
+        symbol [ value %tmp.34 101 60 65 ];
+        symbol [ Graphics %tmp.35 101 67 75 ];
+        %tmp.35 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.36 101 76 94 ];
+        %tmp.36 = getv %tmp.35 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.26 %tmp.27(%tmp.30, %tmp.31, %tmp.33, %tmp.34, %tmp.36);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_96_57_102_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 104; @symbol_functiondef = [drawCentered,104,13,25]; @symbol_param<0> = [dc,104,26,28]; @symbol_param<1> = [y,104,30,31]; @symbol_param<2> = [font,104,33,37]; @symbol_param<3> = [text,104,39,43]; @symbol_param<4> = [color,104,45,50]; ]
+    function drawCentered(dc, y, font, text, color) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_104_52_106_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 105 8 ]
+        %tmp.1 = self;
+        symbol [ drawAt %tmp.2 105 8 14 ];
+        %tmp.2 = getv function %tmp.1 :drawAt;
+        %tmp.3 = lgetv %dc;
+        symbol [ dc %tmp.3 105 15 17 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 105 19 21 ];
+        symbol [ getWidth %tmp.5 105 22 30 ];
+        %tmp.5 = getv function %tmp.4 :getWidth;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = 2;
+        %tmp.8 = div %tmp.6 %tmp.7;
+        %tmp.9 = lgetv %y;
+        symbol [ y %tmp.9 105 38 39 ];
+        %tmp.10 = lgetv %font;
+        symbol [ font %tmp.10 105 41 45 ];
+        %tmp.11 = lgetv %text;
+        symbol [ text %tmp.11 105 47 51 ];
+        %tmp.12 = lgetv %color;
+        symbol [ color %tmp.12 105 53 58 ];
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.8, %tmp.9, %tmp.10, %tmp.11, %tmp.12);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_104_52_106_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 108; @symbol_functiondef = [drawAt,108,13,19]; @symbol_param<0> = [dc,108,20,22]; @symbol_param<1> = [x,108,24,25]; @symbol_param<2> = [y,108,27,28]; @symbol_param<3> = [font,108,30,34]; @symbol_param<4> = [text,108,36,40]; @symbol_param<5> = [color,108,42,47]; ]
+    function drawAt(dc, x, y, font, text, color) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_108_49_111_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 109 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 109 8 10 ];
+        symbol [ setColor %tmp.2 109 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 109 20 25 ];
+        symbol [ Graphics %tmp.4 109 27 35 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.5 109 36 53 ];
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.5);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 110 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 110 8 10 ];
+        symbol [ drawText %tmp.7 110 11 19 ];
+        %tmp.7 = getv function %tmp.6 :drawText;
+        %tmp.8 = lgetv %x;
+        symbol [ x %tmp.8 110 20 21 ];
+        %tmp.9 = lgetv %y;
+        symbol [ y %tmp.9 110 23 24 ];
+        %tmp.10 = lgetv %font;
+        symbol [ font %tmp.10 110 26 30 ];
+        %tmp.11 = lgetv %text;
+        symbol [ text %tmp.11 110 32 36 ];
+        symbol [ Graphics %tmp.12 110 38 46 ];
+        %tmp.12 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.13 110 47 66 ];
+        %tmp.13 = getv %tmp.12 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.6 %tmp.7(%tmp.8, %tmp.9, %tmp.10, %tmp.11, %tmp.13);
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_108_49_111_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 113; @symbol_functiondef = [percent,113,13,20]; @symbol_param<0> = [value,113,21,26]; @symbol_param<1> = [part,113,28,32]; ]
+    function percent(value, part) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_113_34_115_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 114 8 ]
+        %tmp.1 = lgetv %value;
+        symbol [ value %tmp.1 114 16 21 ];
+        %tmp.2 = lgetv %part;
+        symbol [ part %tmp.2 114 24 28 ];
+        %tmp.3 = mul %tmp.1 %tmp.2;
+        %tmp.4 = 100;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        ret %tmp.5;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_113_34_115_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 117; @symbol_functiondef = [formatTime,117,13,23]; @symbol_param<0> = [seconds,117,24,31]; ]
+    function formatTime(seconds) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 118 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_stop" ]
+        %value.1 = local;
+        symbol [ value %value.1 118 12 17 ];
+        %tmp.1 = lgetv %seconds;
+        symbol [ seconds %tmp.1 118 20 27 ];
+        symbol [ toNumber %tmp.2 118 28 36 ];
+        %tmp.2 = getv function %tmp.1 :toNumber;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %value.1 %tmp.3;
+        symbol [ value %value.1 118 12 17 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 119 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_stop" ]
+        %hours.2 = local;
+        symbol [ hours %hours.2 119 12 17 ];
+        %tmp.4 = lgetv %value.1;
+        symbol [ value %tmp.4 119 20 25 ];
+        %tmp.5 = 3600;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        lputv %hours.2 %tmp.6;
+        symbol [ hours %hours.2 119 12 17 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 120 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_stop" ]
+        %minutes.3 = local;
+        symbol [ minutes %minutes.3 120 12 19 ];
+        %tmp.7 = lgetv %value.1;
+        symbol [ value %tmp.7 120 23 28 ];
+        %tmp.8 = 3600;
+        %tmp.9 = mod %tmp.7 %tmp.8;
+        %tmp.10 = 60;
+        %tmp.11 = div %tmp.9 %tmp.10;
+        lputv %minutes.3 %tmp.11;
+        symbol [ minutes %minutes.3 120 12 19 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 121 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_stop" ]
+        %secs.4 = local;
+        symbol [ secs %secs.4 121 12 16 ];
+        %tmp.12 = lgetv %value.1;
+        symbol [ value %tmp.12 121 19 24 ];
+        %tmp.13 = 60;
+        %tmp.14 = mod %tmp.12 %tmp.13;
+        lputv %secs.4 %tmp.14;
+        symbol [ secs %secs.4 121 12 16 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 122 8 ]
+        %tmp.15 = lgetv %hours.2;
+        symbol [ hours %tmp.15 122 15 20 ];
+        symbol [ format %tmp.16 122 21 27 ];
+        %tmp.16 = getv function %tmp.15 :format;
+        %tmp.17 = "%02d";
+        %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
+        %tmp.19 = ":";
+        %tmp.20 = add %tmp.18 %tmp.19;
+        %tmp.21 = lgetv %minutes.3;
+        symbol [ minutes %tmp.21 122 44 51 ];
+        symbol [ format %tmp.22 122 52 58 ];
+        %tmp.22 = getv function %tmp.21 :format;
+        %tmp.23 = "%02d";
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        %tmp.25 = add %tmp.20 %tmp.24;
+        %tmp.26 = ":";
+        %tmp.27 = add %tmp.25 %tmp.26;
+        %tmp.28 = lgetv %secs.4;
+        symbol [ secs %tmp.28 122 75 79 ];
+        symbol [ format %tmp.29 122 80 86 ];
+        %tmp.29 = getv function %tmp.28 :format;
+        %tmp.30 = "%02d";
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        %tmp.32 = add %tmp.27 %tmp.31;
+        ret %tmp.32;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_117_33_123_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 125; @symbol_functiondef = [formatSignedTime,125,13,29]; @symbol_param<0> = [seconds,125,30,37]; ]
+    function formatSignedTime(seconds) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_125_39_129_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 126 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_125_39_129_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_125_39_129_4_stop" ]
+        %prefix.1 = local;
+        symbol [ prefix %prefix.1 126 12 18 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_begin:
+        %tmp.1 = lgetv %seconds;
+        symbol [ seconds %tmp.1 126 21 28 ];
+        %tmp.2 = 0;
+        %tmp.3 = lt %tmp.1 %tmp.2;
+        bf %tmp.3 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_true:
+        %tmp.4 = "-";
+        push %tmp.4;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_else_false:
+        %tmp.5 = "";
+        push %tmp.5;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_end:
+        %tmp.6 = phi [%tmp.3 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_begin] [%tmp.4 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_true] [%tmp.5 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_else_false] [%tmp.6 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_126_21_126_41_end];
+        lputv %prefix.1 %tmp.6;
+        symbol [ prefix %prefix.1 126 12 18 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 127 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_125_39_129_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_125_39_129_4_stop" ]
+        %value.2 = local;
+        symbol [ value %value.2 127 12 17 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_begin:
+        %tmp.7 = lgetv %seconds;
+        symbol [ seconds %tmp.7 127 20 27 ];
+        %tmp.8 = 0;
+        %tmp.9 = lt %tmp.7 %tmp.8;
+        bf %tmp.9 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_else_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_true:
+        %tmp.10 = lgetv %seconds;
+        symbol [ seconds %tmp.10 127 35 42 ];
+        %tmp.11 = sub 0 %tmp.10;
+        push %tmp.11;
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_else_false:
+        %tmp.12 = lgetv %seconds;
+        symbol [ seconds %tmp.12 127 45 52 ];
+        push %tmp.12;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_end:
+        %tmp.13 = phi [%tmp.9 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_begin] [%tmp.11 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_true] [%tmp.12 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_else_false] [%tmp.13 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_127_20_127_45_end];
+        lputv %value.2 %tmp.13;
+        symbol [ value %value.2 127 12 17 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 128 8 ]
+        %tmp.14 = lgetv %prefix.1;
+        symbol [ prefix %tmp.14 128 15 21 ];
+        %tmp.15 = self;
+        symbol [ formatTime %tmp.16 128 24 34 ];
+        %tmp.16 = getv function %tmp.15 :formatTime;
+        %tmp.17 = lgetv %value.2;
+        symbol [ value %tmp.17 128 35 40 ];
+        %tmp.18 = invoke %tmp.15 %tmp.16(%tmp.17);
+        %tmp.19 = add %tmp.14 %tmp.18;
+        ret %tmp.19;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_125_39_129_4_stop:
+    }
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 131; @symbol_functiondef = [formatShort,131,13,24]; @symbol_param<0> = [seconds,131,25,32]; ]
+    function formatShort(seconds) {
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_131_34_139_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 132 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_131_34_139_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_131_34_139_4_stop" ]
+        %minutes.1 = local;
+        symbol [ minutes %minutes.1 132 12 19 ];
+        %tmp.1 = lgetv %seconds;
+        symbol [ seconds %tmp.1 132 22 29 ];
+        %tmp.2 = 60;
+        %tmp.3 = div %tmp.1 %tmp.2;
+        lputv %minutes.1 %tmp.3;
+        symbol [ minutes %minutes.1 132 12 19 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 133 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_131_34_139_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_131_34_139_4_stop" ]
+        %hours.2 = local;
+        symbol [ hours %hours.2 133 12 17 ];
+        %tmp.4 = lgetv %minutes.1;
+        symbol [ minutes %tmp.4 133 20 27 ];
+        %tmp.5 = 60;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        lputv %hours.2 %tmp.6;
+        symbol [ hours %hours.2 133 12 17 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 134 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_131_34_139_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_131_34_139_4_stop" ]
+        %rest.3 = local;
+        symbol [ rest %rest.3 134 12 16 ];
+        %tmp.7 = lgetv %minutes.1;
+        symbol [ minutes %tmp.7 134 19 26 ];
+        %tmp.8 = 60;
+        %tmp.9 = mod %tmp.7 %tmp.8;
+        lputv %rest.3 %tmp.9;
+        symbol [ rest %rest.3 134 12 16 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 135 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_135_8_137_8_if_stmt:
+        %tmp.10 = lgetv %hours.2;
+        symbol [ hours %tmp.10 135 12 17 ];
+        %tmp.11 = 0;
+        %tmp.12 = gt %tmp.10 %tmp.11;
+        bf %tmp.12 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_135_8_137_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_135_8_137_8_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_135_23_137_8_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 136 12 ]
+        %tmp.13 = lgetv %hours.2;
+        symbol [ hours %tmp.13 136 19 24 ];
+        symbol [ toString %tmp.14 136 25 33 ];
+        %tmp.14 = getv function %tmp.13 :toString;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        %tmp.16 = "U";
+        %tmp.17 = add %tmp.15 %tmp.16;
+        %tmp.18 = lgetv %rest.3;
+        symbol [ rest %tmp.18 136 44 48 ];
+        symbol [ format %tmp.19 136 49 55 ];
+        %tmp.19 = getv function %tmp.18 :format;
+        %tmp.20 = "%02d";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        %tmp.22 = add %tmp.17 %tmp.21;
+        ret %tmp.22;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_135_23_137_8_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_135_8_137_8_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_135_8_137_8_if_end:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 138 8 ]
+        %tmp.23 = lgetv %minutes.1;
+        symbol [ minutes %tmp.23 138 15 22 ];
+        symbol [ toString %tmp.24 138 23 31 ];
+        %tmp.24 = getv function %tmp.23 :toString;
+        %tmp.25 = invoke %tmp.23 %tmp.24();
+        %tmp.26 = " MIN";
+        %tmp.27 = add %tmp.25 %tmp.26;
+        ret %tmp.27;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_131_34_139_4_stop:
+    }
+}
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc"; @line = 1; ]
+<init> {
+}
