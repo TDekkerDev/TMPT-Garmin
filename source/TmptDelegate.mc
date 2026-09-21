@@ -87,6 +87,7 @@ class TmptAdjustmentDelegate extends WatchUi.Menu2InputDelegate {
             app.finishDay();
             return;
         }
+        app.vibrateAdjustment();
         WatchUi.popView(WatchUi.SLIDE_DOWN);
         WatchUi.requestUpdate();
     }

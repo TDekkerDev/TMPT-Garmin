@@ -215,10 +215,10 @@ C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_42_46_47_4_start:
         %tmp.9 = getm $.Toybox.Graphics;
         symbol [ FONT_SMALL %tmp.10 43 55 65 ];
         %tmp.10 = getv %tmp.9 :FONT_SMALL;
-        %tmp.11 = "TMPT DAG";
-        symbol [ Graphics %tmp.12 43 79 87 ];
+        %tmp.11 = "TMPT";
+        symbol [ Graphics %tmp.12 43 75 83 ];
         %tmp.12 = getm $.Toybox.Graphics;
-        symbol [ COLOR_GREEN %tmp.13 43 88 99 ];
+        symbol [ COLOR_GREEN %tmp.13 43 84 95 ];
         %tmp.13 = getv %tmp.12 :COLOR_GREEN;
         invoke %tmp.1 %tmp.2(%tmp.3, %tmp.8, %tmp.10, %tmp.11, %tmp.13);
 [ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 44 8 ]
@@ -323,13 +323,13 @@ C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_true
         push %tmp.14;
         goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_end;
 C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_else_false:
-        %tmp.15 = "TMPT DAG";
+        %tmp.15 = "TMPT";
         push %tmp.15;
 C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_end:
         %tmp.16 = phi [%tmp.13 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_begin] [%tmp.14 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_true] [%tmp.15 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_else_false] [%tmp.16 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptView_mc_50_66_50_102_end];
-        symbol [ Graphics %tmp.17 50 114 122 ];
+        symbol [ Graphics %tmp.17 50 110 118 ];
         %tmp.17 = getm $.Toybox.Graphics;
-        symbol [ COLOR_LT_GRAY %tmp.18 50 123 136 ];
+        symbol [ COLOR_LT_GRAY %tmp.18 50 119 132 ];
         %tmp.18 = getv %tmp.17 :COLOR_LT_GRAY;
         invoke %tmp.1 %tmp.2(%tmp.3, %tmp.8, %tmp.10, %tmp.16, %tmp.18);
 [ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptView.mc" 52 8 ]

@@ -16,6 +16,7 @@ Ondersteunde modellen in deze versie:
 - Berekent gecorrigeerde tijd als verstreken tijd plus straftijd min officiële wachttijdcorrectie.
 - Toont resterende tijd en kleurt geel onder 60 minuten en rood onder 15 minuten.
 - Geeft een trilwaarschuwing bij 60, 30, 15 en 5 minuten en bij het verlopen van de limiet.
+- Geeft herkenbare trilfeedback bij starten, stoppen en het toevoegen van straffen of correcties.
 - Houdt strafrondes apart bij.
 - Toont actuele hartslag, snelheid, gemiddelde snelheid en afstand.
 - Slaat GPS, hartslag en activiteit op als Garmin FIT activiteit.

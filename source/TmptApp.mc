@@ -43,7 +43,30 @@ class TmptApp extends Application.AppBase {
         model.begin();
         lastAlertLevel = 0;
         enableTracking();
+        vibrateStart();
         WatchUi.requestUpdate();
+    }
+
+    function vibrateStart() {
+        if (Attention has :vibrate) {
+            Attention.vibrate([new Attention.VibeProfile(100, 250)]);
+        }
+    }
+
+    function vibrateAdjustment() {
+        if (Attention has :vibrate) {
+            Attention.vibrate([
+                new Attention.VibeProfile(100, 150),
+                new Attention.VibeProfile(0, 100),
+                new Attention.VibeProfile(100, 150)
+            ]);
+        }
+    }
+
+    function vibrateStop() {
+        if (Attention has :vibrate) {
+            Attention.vibrate([new Attention.VibeProfile(100, 700)]);
+        }
     }
 
     function enableTracking() {
@@ -110,6 +133,7 @@ class TmptApp extends Application.AppBase {
         model.markFinished();
         Sensor.enableSensorEvents(null);
         Position.enableLocationEvents(Position.LOCATION_DISABLE, null);
+        vibrateStop();
         WatchUi.requestUpdate();
     }
 
@@ -122,6 +146,7 @@ class TmptApp extends Application.AppBase {
         model.reset();
         Sensor.enableSensorEvents(null);
         Position.enableLocationEvents(Position.LOCATION_DISABLE, null);
+        vibrateStop();
         WatchUi.requestUpdate();
     }
 }

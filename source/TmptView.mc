@@ -40,14 +40,14 @@ class TmptView extends WatchUi.View {
     }
 
     function drawStartPage(dc, width, height) {
-        drawCentered(dc, percent(height, 18), Graphics.FONT_SMALL, "TMPT DAG", Graphics.COLOR_GREEN);
+        drawCentered(dc, percent(height, 18), Graphics.FONT_SMALL, "TMPT", Graphics.COLOR_GREEN);
         drawCentered(dc, percent(height, 34), Graphics.FONT_NUMBER_MILD, "10:00:00", Graphics.COLOR_WHITE);
         drawCentered(dc, percent(height, 57), Graphics.FONT_XTINY, "DAGLIMIET", Graphics.COLOR_LT_GRAY);
         drawCentered(dc, percent(height, 73), Graphics.FONT_XTINY, "DRUK START", Graphics.COLOR_WHITE);
     }
 
     function drawTimePage(dc, width, height) {
-        drawCentered(dc, percent(height, 5), Graphics.FONT_SMALL, model.finished ? "TMPT RESULTAAT" : "TMPT DAG", Graphics.COLOR_LT_GRAY);
+        drawCentered(dc, percent(height, 5), Graphics.FONT_SMALL, model.finished ? "TMPT RESULTAAT" : "TMPT", Graphics.COLOR_LT_GRAY);
 
         var remaining = model.remainingSeconds();
         var color = Graphics.COLOR_GREEN;

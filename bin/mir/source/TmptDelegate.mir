@@ -486,9 +486,9 @@ C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_69_39_73_4_st
     }
     [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 75; @symbol_functiondef = [onSelect,75,13,21]; @symbol_param<0> = [item,75,22,26]; ]
     function onSelect(item) {
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_75_28_92_4_start:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_75_28_93_4_start:
 [ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 76 8 ]
-        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_75_28_92_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_75_28_92_4_stop" ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_75_28_93_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_75_28_93_4_stop" ]
         %id.1 = local;
         symbol [ id %id.1 76 12 14 ];
         %tmp.1 = lgetv %item;
@@ -696,115 +696,121 @@ C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_79_13_89_8_if
 C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_78_13_89_8_if_end:
 C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_77_8_89_8_if_end:
 [ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 90 8 ]
-        symbol [ WatchUi %tmp.77 90 8 15 ];
-        %tmp.77 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.78 90 16 23 ];
-        %tmp.78 = getv function %tmp.77 :popView;
-        symbol [ WatchUi %tmp.79 90 24 31 ];
-        %tmp.79 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_DOWN %tmp.80 90 32 42 ];
-        %tmp.80 = getv %tmp.79 :SLIDE_DOWN;
-        invoke %tmp.77 %tmp.78(%tmp.80);
+        symbol [ app %tmp.78 90 8 11 ];
+        %tmp.78 = getv ? :app;
+        symbol [ vibrateAdjustment %tmp.79 90 12 29 ];
+        %tmp.79 = getv function %tmp.78 :vibrateAdjustment;
+        invoke %tmp.78 %tmp.79();
 [ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 91 8 ]
-        symbol [ WatchUi %tmp.81 91 8 15 ];
-        %tmp.81 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.82 91 16 29 ];
-        %tmp.82 = getv function %tmp.81 :requestUpdate;
-        invoke %tmp.81 %tmp.82();
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_75_28_92_4_stop:
+        symbol [ WatchUi %tmp.80 91 8 15 ];
+        %tmp.80 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.81 91 16 23 ];
+        %tmp.81 = getv function %tmp.80 :popView;
+        symbol [ WatchUi %tmp.82 91 24 31 ];
+        %tmp.82 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_DOWN %tmp.83 91 32 42 ];
+        %tmp.83 = getv %tmp.82 :SLIDE_DOWN;
+        invoke %tmp.80 %tmp.81(%tmp.83);
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 92 8 ]
+        symbol [ WatchUi %tmp.84 92 8 15 ];
+        %tmp.84 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.85 92 16 29 ];
+        %tmp.85 = getv function %tmp.84 :requestUpdate;
+        invoke %tmp.84 %tmp.85();
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_75_28_93_4_stop:
     }
 }
-[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 95; @symbol_classdef = [TmptFinishDelegate,95,6,24]; @symbol_extends<0> = [WatchUi,95,33,40]; @symbol_extends<1> = [Menu2InputDelegate,95,41,59]; ]
+[ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 96; @symbol_classdef = [TmptFinishDelegate,96,6,24]; @symbol_extends<0> = [WatchUi,96,33,40]; @symbol_extends<1> = [Menu2InputDelegate,96,41,59]; ]
 class TmptFinishDelegate extends WatchUi.Menu2InputDelegate {
-    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 95; ]
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 96; ]
     <init> {
     }
-    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 95; ]
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 96; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 96; @position = 8; @symbol_vardef = [app,96,8,11]; ]
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 97; @position = 8; @symbol_vardef = [app,97,8,11]; ]
     var app;
-    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 98; @symbol_functiondef = [initialize,98,13,23]; @symbol_param<0> = [anApp,98,24,29]; ]
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 99; @symbol_functiondef = [initialize,99,13,23]; @symbol_param<0> = [anApp,99,24,29]; ]
     function initialize(anApp) as Void {
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_98_31_101_4_start:
-[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 99 8 ]
-        symbol [ Menu2InputDelegate %tmp.2 99 8 26 ];
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_99_31_102_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 100 8 ]
+        symbol [ Menu2InputDelegate %tmp.2 100 8 26 ];
         %tmp.2 = getv ? :Menu2InputDelegate;
-        symbol [ initialize %tmp.3 99 27 37 ];
+        symbol [ initialize %tmp.3 100 27 37 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 100 8 ]
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 101 8 ]
         %tmp.4 = lgetv %anApp;
-        symbol [ anApp %tmp.4 100 14 19 ];
-        symbol [ app ? 100 8 11 ];
+        symbol [ anApp %tmp.4 101 14 19 ];
+        symbol [ app ? 101 8 11 ];
         putv self :app %tmp.4;
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_98_31_101_4_stop:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_99_31_102_4_stop:
     }
-    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 103; @symbol_functiondef = [onSelect,103,13,21]; @symbol_param<0> = [item,103,22,26]; ]
+    [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 104; @symbol_functiondef = [onSelect,104,13,21]; @symbol_param<0> = [item,104,22,26]; ]
     function onSelect(item) {
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_103_28_108_4_start:
-[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 104 8 ]
-        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_103_28_108_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_103_28_108_4_stop" ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_104_28_109_4_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 105 8 ]
+        [ "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_104_28_109_4_start" "C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_104_28_109_4_stop" ]
         %id.1 = local;
-        symbol [ id %id.1 104 12 14 ];
+        symbol [ id %id.1 105 12 14 ];
         %tmp.1 = lgetv %item;
-        symbol [ item %tmp.1 104 17 21 ];
-        symbol [ getId %tmp.2 104 22 27 ];
+        symbol [ item %tmp.1 105 17 21 ];
+        symbol [ getId %tmp.2 105 22 27 ];
         %tmp.2 = getv function %tmp.1 :getId;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %id.1 %tmp.3;
-        symbol [ id %id.1 104 12 14 ];
-[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 105 8 ]
-        symbol [ WatchUi %tmp.4 105 8 15 ];
+        symbol [ id %id.1 105 12 14 ];
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 106 8 ]
+        symbol [ WatchUi %tmp.4 106 8 15 ];
         %tmp.4 = getm $.Toybox.WatchUi;
-        symbol [ popView %tmp.5 105 16 23 ];
+        symbol [ popView %tmp.5 106 16 23 ];
         %tmp.5 = getv function %tmp.4 :popView;
-        symbol [ WatchUi %tmp.6 105 24 31 ];
+        symbol [ WatchUi %tmp.6 106 24 31 ];
         %tmp.6 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_DOWN %tmp.7 105 32 42 ];
+        symbol [ SLIDE_DOWN %tmp.7 106 32 42 ];
         %tmp.7 = getv %tmp.6 :SLIDE_DOWN;
         invoke %tmp.4 %tmp.5(%tmp.7);
-[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 106 8 ]
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_106_8_107_53_if_stmt:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 107 8 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_8_108_53_if_stmt:
         %tmp.8 = lgetv %id.1;
-        symbol [ id %tmp.8 106 12 14 ];
+        symbol [ id %tmp.8 107 12 14 ];
         %tmp.10 = const :save;
-        symbol [ save %tmp.10 106 19 23 const ];
+        symbol [ save %tmp.10 107 19 23 const ];
         %tmp.11 = eq %tmp.8 %tmp.10;
-        bf %tmp.11 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_106_8_107_53_if_false;
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_106_8_107_53_if_true:
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_106_25_106_44_start:
-[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 106 27 ]
-        symbol [ app %tmp.13 106 27 30 ];
+        bf %tmp.11 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_8_108_53_if_false;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_8_108_53_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_25_107_44_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 107 27 ]
+        symbol [ app %tmp.13 107 27 30 ];
         %tmp.13 = getv ? :app;
-        symbol [ finishDay %tmp.14 106 31 40 ];
+        symbol [ finishDay %tmp.14 107 31 40 ];
         %tmp.14 = getv function %tmp.13 :finishDay;
         invoke %tmp.13 %tmp.14();
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_106_25_106_44_stop:
-        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_106_8_107_53_if_end;
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_106_8_107_53_if_false:
-[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 107 13 ]
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_13_107_53_if_stmt:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_25_107_44_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_8_108_53_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_8_108_53_if_false:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 108 13 ]
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_108_13_108_53_if_stmt:
         %tmp.15 = lgetv %id.1;
-        symbol [ id %tmp.15 107 17 19 ];
+        symbol [ id %tmp.15 108 17 19 ];
         %tmp.17 = const :discard;
-        symbol [ discard %tmp.17 107 24 31 const ];
+        symbol [ discard %tmp.17 108 24 31 const ];
         %tmp.18 = eq %tmp.15 %tmp.17;
-        bf %tmp.18 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_13_107_53_if_end;
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_13_107_53_if_true:
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_33_107_53_start:
-[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 107 35 ]
-        symbol [ app %tmp.20 107 35 38 ];
+        bf %tmp.18 @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_108_13_108_53_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_108_13_108_53_if_true:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_108_33_108_53_start:
+[ "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc" 108 35 ]
+        symbol [ app %tmp.20 108 35 38 ];
         %tmp.20 = getv ? :app;
-        symbol [ discardDay %tmp.21 107 39 49 ];
+        symbol [ discardDay %tmp.21 108 39 49 ];
         %tmp.21 = getv function %tmp.20 :discardDay;
         invoke %tmp.20 %tmp.21();
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_33_107_53_stop:
-        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_13_107_53_if_end;
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_13_107_53_if_end:
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_106_8_107_53_if_end:
-C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_103_28_108_4_stop:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_108_33_108_53_stop:
+        goto @C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_108_13_108_53_if_end;
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_108_13_108_53_if_end:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_107_8_108_53_if_end:
+C__Users_thoma_Documents_GitHub_TMPT_Garmin_source_TmptDelegate_mc_104_28_109_4_stop:
     }
 }
 [ @file = "C:\Users\thoma\Documents\GitHub\TMPT-Garmin\source\TmptDelegate.mc"; @line = 1; ]
